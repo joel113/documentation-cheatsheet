@@ -32,6 +32,10 @@ Goto end of file
 
      Shift + G
 
+## JSON
+
+:%!jq .
+
 ## Plugins
 
 https://github.com/junegunn/vim-plug
