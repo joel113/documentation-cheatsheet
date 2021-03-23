@@ -38,6 +38,14 @@ https://git-scm.com/docs
 
 `git rebase -i HEAD~3` - Rebases the three previous commits of HEAD
 
+## Git Commit Manipulation
+
+`git rebase --interactive 'asdf1234^'`
+
+`git commit --all --amend --no-edit`
+
+`git rebase --continue`
+
 ## Git Working Trees
 
 `git worktree add`

@@ -4,33 +4,51 @@
 
 Move the cursor
 
-     h
-     j
-     k
-     l
-     H
-     M
-     E
+```
+h
+j
+k
+l
+H
+M
+E
+```
 
 Jump forwards to the end of a word
 
-     w
+```
+w
+```
 
 Jump forwards to the start of the a word
 
-     b
+```
+b
+```
 
 Jump to the start of the line
 
-     0
+```
+0
+```
 
 Jump to the end of the line
 
-     $
+```
+$
+```
 
 Goto end of file
 
-     Shift + G
+```
+Shift + G
+```
+
+## Undo and Redo
+
+`u` - Undo last change
+
+`Ctrl-r` - Redo last change
 
 ## JSON
 
