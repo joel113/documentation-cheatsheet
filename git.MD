@@ -32,6 +32,8 @@ https://git-scm.com/docs
 
 `git show branch:file` - Shows the file within the branch
 
+`git show HEAD` - Shows the diff of the last commit
+
 ## Git Branch Manipulation
 
 `git cherry-pick <commitid>` - Cherry picks a commit into the current branch
