@@ -28,6 +28,10 @@ https://git-scm.com/docs
 
 `git checkout HEAD -- my-file.txt` - Reset a single file
 
+`git reset --hard head` - Reset branch to head
+
+`git reset --hard origin/master` - Reset branch to master from origin
+
 ## Git Investigate
 
 `git show branch:file` - Shows the file within the branch
