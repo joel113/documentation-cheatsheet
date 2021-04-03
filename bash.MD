@@ -48,3 +48,9 @@
 `sed -r 's/[xyz]+/_/g'` - Remove some characters from the passed string
 `grep -oh "\w*th\w*" *` - Match some characters from the passed string
 `echo "${s%%.*}" - Match some characters from the passed string
+
+### Json Processing
+
+`cat example.json | jq '.'` - Print a json file nicely formatted
+`cat example.json | jq '.[0]' - Print the first element of a json file nicely formatted
+`cat example.json | jq '.[0]["greeting"]' - Print the greeting element of the first element of a json file nicely formatted
