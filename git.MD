@@ -24,6 +24,12 @@ https://git-scm.com/docs
 
 `git add -p` - Interactively stage files
 
+## Git Push
+
+`git push -f` - Does a force push
+
+`git push --force-with-lease` - Checks the remote branch for changes before force push
+
 ## Git Reset
 
 `git checkout HEAD -- my-file.txt` - Reset a single file
