@@ -12,6 +12,8 @@ https://git-scm.com/docs
 
 `git checkout -` - Git checkout the previous branch again
 
+`git checkout <commitid>` - Git checkout specific commit id
+
 ## Git Commit
 
 `git commit --amend` - Git commit ammend
@@ -23,6 +25,42 @@ https://git-scm.com/docs
 `git add` - Stage files: 
 
 `git add -p` - Interactively stage files
+
+## Git Stash
+
+`git stash` - Creates a stash
+
+`git stash --all` - Adds all untracked files
+
+`git stash list` - List all stashes
+
+`git stash apply` - Applies the latest stash
+
+`git stash apply stash@{0}` - Applies a specific stash
+
+`git stash pop stash@{0}` - Pops a specific stash
+
+`git stash pop` - Pops the last stash
+
+`git stash show` - Shows the last stash
+
+`git stash show -p` - Shows the content of the last stash
+
+`git stash show -p stash@{0}` - Shows the content of a specific stash
+
+`git stash branch new_branch stash@{2}` - Creates a branch from a stash
+
+`git stash show --name-only` - Shows the modified files of a stash
+
+`git stash -s stash@{0} -- <filename>` - Applies a stashed change from a particular file
+
+`git restore -s stash@{1} -- src/main/java/Whateverfile.java` - Unstash a specific file from the stash
+
+`git stash clear` - Deletes all stash entries
+
+`git stash drop` - Drops the last stash entry
+
+`git stash drop stash@{2}` - Drops a specific stash entry
 
 ## Git Push
 
