@@ -50,6 +50,18 @@ Shift + G
 
 `Ctrl-r` - Redo last change
 
+## Search and Replace
+
+`:substitute` - Command to search for a text pattern and replace it with a text string
+
+`:s/foo/bar/g` - Find each occurance of foo and replace it with bar in the current line
+
+`:%s/foo/bar/g` - Find each occurance of foo and replace it with bar
+
+### More information
+
+https://vim.fandom.com/wiki/Search_and_replace
+
 ## JSON
 
 :%!jq .
