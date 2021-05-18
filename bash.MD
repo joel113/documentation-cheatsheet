@@ -15,6 +15,12 @@
 
 `mv file{,extension}.log` - Appends "extension" to the file name
 
+## Renaming
+
+`for f in *.pdf; do mv "$f" "$(date "+%Y%m%d"-"$f").pdf"; done` - Prepends file date to the file name
+
+`for f in *.*; do mv -v "$f" "${f:11}"; done`- Removes first eleven characters from a filename
+
 ## Compression
 
 `tar -zcvf archive.tar.gz directory-name` - Tar.gz a whole directory
