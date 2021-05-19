@@ -10,6 +10,13 @@
 `Ctrl-r` - Reverse search
 `Ctrl-s` - Reverses the search direction
 `Ctrl-g` - Leave the search
+`Ctrl-k` - Kill to the end of the line
+`Ctrl-u` - Kill to the beginning of the line
+`Ctrl-y` - Yanks the line
+`Ctrl-w` - Kill to the next whitespace of the line
+`Ctrl-x-e` - Edits the current command in an editor
+
+`alt-.` - Repeats the previous argument
 
 ## Moving
 
@@ -20,6 +27,10 @@
 `for f in *.pdf; do mv "$f" "$(date "+%Y%m%d"-"$f").pdf"; done` - Prepends file date to the file name
 
 `for f in *.*; do mv -v "$f" "${f:11}"; done`- Removes first eleven characters from a filename
+
+## Tailing
+
+`less +f` - Less and follow (shift-f to reattach after scrolling)
 
 ## Compression
 
@@ -39,6 +50,10 @@
 ## Networking
 
 `netstat -tulpn` - Gets all ports in use
+
+## Administration
+
+`sudo !!` - Reruns to the previous command with sudo prepended
 
 ## Processes
 
