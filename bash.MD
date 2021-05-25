@@ -28,6 +28,12 @@
 
 `for f in *.*; do mv -v "$f" "${f:11}"; done`- Removes first eleven characters from a filename
 
+## Editing
+
+`tr --delete '\n' < file.txt` - Removes newline character from file.txt
+`tr -d '\n' < file.txt > newfile.txt` - Removes newline character from file.txt and writes the result to newfile.txt
+
+
 ## Tailing
 
 `less +f` - Less and follow (shift-f to reattach after scrolling)
