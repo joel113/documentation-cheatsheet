@@ -44,6 +44,18 @@ Goto end of file
 Shift + G
 ```
 
+## Copy and Paste
+
+`yy` - yank the current line
+
+`5yy` - yank the following five lines
+
+`dd` - delete the line
+
+`p` - paste the line after the current line
+
+`P` - paste the line before the current line
+
 ## Undo and Redo
 
 `u` - Undo last change
