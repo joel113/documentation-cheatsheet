@@ -81,3 +81,16 @@
 `cat example.json | jq '.'` - Print a json file nicely formatted
 `cat example.json | jq '.[0]' - Print the first element of a json file nicely formatted
 `cat example.json | jq '.[0]["greeting"]' - Print the greeting element of the first element of a json file nicely formatted
+
+### AWK
+
+`ps | awk '{print $1}'` - Print the first column of each line
+`cat /etc/passwd | awk -F ":" '{print $1}'` - Use a different column separator than space and print the first column
+`awk -F ":" '{print $1} /etc/passwd` - A different notation to use a different column separator than space and print the first column
+`awk 'BEGIN{FS=":"; OFS="-"} print $1,$6,$7}' /etc/passwd` - Replace a field separator with another field separator and print some columns
+`cat /etc/shells | awk -F "/" '/^\// {print $NF}' | uniq` - Last field when searching for a pattern
+`df | awk '/\/dev\/loop/ {print $1 $4 + $5}'` - Again awk but having a sum of $4 and $5
+`cat /etc/shells | awk 'length($0) > 7'` - Print only the lines which have a first column length of longer than 7
+`awk 'BEGIN { for(i=1; i<=10; i++) print "The square root of",i,"is",i*i;}'` - Kind of programming in AWK
+`cat /etc/shells | awk '{print substr($0,4)}'` - Use the substr function of AWK
+`df | awk 'NR==7, NR==11 {print NR, $0}'` | Print line 7 to 11 and print the line including the line number
