@@ -14,35 +14,15 @@ M
 E
 ```
 
-Jump forwards to the end of a word
+`w` - Jump forwards to the end of a word
+`b` - Jump forwards to the start of the a word
+`0` - Jump to the start of the line
+`$` - Jump to the end of the line
+`Shift + G` - Goto end of file
 
-```
-w
-```
+## Insert
 
-Jump forwards to the start of the a word
-
-```
-b
-```
-
-Jump to the start of the line
-
-```
-0
-```
-
-Jump to the end of the line
-
-```
-$
-```
-
-Goto end of file
-
-```
-Shift + G
-```
+`A` - Append at the of the line and enter the insert mode
 
 ## Copy and Paste
 
