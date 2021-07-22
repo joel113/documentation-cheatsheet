@@ -72,6 +72,8 @@ https://git-scm.com/docs
 
 `git checkout HEAD -- my-file.txt` - Reset a single file
 
+`git reset --soft HEAD~1` - Reverts the last commit
+
 `git reset --hard head` - Reset branch to head
 
 `git reset --hard origin/master` - Reset branch to master from origin
@@ -119,3 +121,19 @@ https://git-scm.com/docs/git-worktree
 `git bisect reset`
 
 `git bisect start <commitid> <commitid>`
+
+## Git Edit Commits
+
+```
+git stash
+
+git rebase -i HEAD~2
+
+git stash pop
+
+git add <file>
+
+git commit --amend --no-edit
+
+git rebase --continue
+```
