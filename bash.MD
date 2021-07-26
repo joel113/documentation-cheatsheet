@@ -94,3 +94,14 @@
 `awk 'BEGIN { for(i=1; i<=10; i++) print "The square root of",i,"is",i*i;}'` - Kind of programming in AWK
 `cat /etc/shells | awk '{print substr($0,4)}'` - Use the substr function of AWK
 `df | awk 'NR==7, NR==11 {print NR, $0}'` | Print line 7 to 11 and print the line including the line number
+
+### Docker
+
+`docker run -it -rm alpine` - Runs an alpine image and logs into the shell
+
+### More Commands
+
+`cmp <file1> <file2>` - Compares the difference between two files
+`comm <file1> <file2>` - Find lines in common
+`script <filename>` - Record a log of your terminal session
+`jot <number>` - Generate test data with jot
