@@ -16,4 +16,4 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 ## Secrets
 
-`kubectl get secret/keystore -o jsonpath='{.data}' -n tsmb | jq '."keystore.p12" | tr -d \" | base64 -decode > keystore.p12`
+`kubectl get secret/keystore -o jsonpath='{.data}' -n tsmb | jq '."keystore.p12"' | tr -d \" | base64 -decode > keystore.p12`
