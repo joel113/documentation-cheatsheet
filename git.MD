@@ -124,16 +124,14 @@ https://git-scm.com/docs/git-worktree
 
 ## Git Edit Commits
 
-```
-git stash
+`git stash`
 
-git rebase -i HEAD~2
+`git rebase -i HEAD~2`
 
-git stash pop
+`git stash pop`
 
-git add <file>
+`git add <file>`
 
-git commit --amend --no-edit
+`git commit --amend --no-edit`
 
-git rebase --continue
-```
+`git rebase --continue`
