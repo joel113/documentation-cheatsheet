@@ -1,19 +1,31 @@
-# Bash Cheat Sheet
+# Shell Cheat Sheet
 
 ## Cursor
 
 `Ctrl-a` - Moves the cursor to the beginning of the line
+
 `Ctrl-e` - Moves the cursor to the end of the line
+
 `Option-b` - Moves the cursor forward by a word
+
 `Option-f` - Moves the cursor backward by a word
+
 `Ctrl-l` - Clears the screen
+
 `Ctrl-r` - Reverse search
+
 `Ctrl-s` - Reverses the search direction
+
 `Ctrl-g` - Leave the search
+
 `Ctrl-k` - Kill to the end of the line
+
 `Ctrl-u` - Kill to the beginning of the line
+
 `Ctrl-y` - Yanks the line
+
 `Ctrl-w` - Kill to the next whitespace of the line
+
 `Ctrl-x-e` - Edits the current command in an editor
 
 `alt-.` - Repeats the previous argument
@@ -31,12 +43,22 @@
 ## Editing
 
 `tr --delete '\n' < file.txt` - Removes newline character from file.txt
-`tr -d '\n' < file.txt > newfile.txt` - Removes newline character from file.txt and writes the result to newfile.txt
 
+`tr -d '\n' < file.txt > newfile.txt` - Removes newline character from file.txt and writes the result to newfile.txt
 
 ## Tailing
 
 `less +f` - Less and follow (shift-f to reattach after scrolling)
+
+## Piping
+
+`cat somefile | tee -a log.txt | cat > /dev/null` - Log output but not show on the console
+
+## History
+
+`fc` - Fix or change a really long command that you run last with a text editor
+
+` ls -s` - Don't add a command to the history
 
 ## Compression
 
@@ -49,8 +71,11 @@
 ## Files
 
 `lsof -u joel` - Gets the open files of the user joel
+
 `kill -9 `` ` ``lsof -t -u joel`` ` ``` - Kills all open files of the user joel
+
 `lsof -i :8090-9090` - Gets the connections between port 8090 and 9090
+
 `lsof -p 23619` - Gets the process of pid 23619
 
 ## Networking
@@ -64,35 +89,55 @@
 ## Processes
 
 `ps -ef` - Gets all processes
+
 `ps aux --sort=-%mem` - Gets all processes and sorts them by memory 
 
 ## Text Processing
 
 `sort -u input.txt` - Remove duplicates with sort command
+
 `awk '!a[$0]++` - Remove duplicates with awk command
+
 `tr -d '[:space:]'` - Remove space characters, form feeds, new-lines, carriage returns, horizontal tabs, and vertical tabs
+
 `tr -d .` - Remove . character from the string
+
 `sed -r 's/[xyz]+/_/g'` - Remove some characters from the passed string
+
 `grep -oh "\w*th\w*" *` - Match some characters from the passed string
+
+`grep -rn /foobar/ -e text_to_find` - Find a text in a directory resursively
+
 `echo "${s%%.*}" - Match some characters from the passed string
 
 ### Json Processing
 
 `cat example.json | jq '.'` - Print a json file nicely formatted
+
 `cat example.json | jq '.[0]' - Print the first element of a json file nicely formatted
+
 `cat example.json | jq '.[0]["greeting"]' - Print the greeting element of the first element of a json file nicely formatted
 
 ### AWK
 
 `ps | awk '{print $1}'` - Print the first column of each line
+
 `cat /etc/passwd | awk -F ":" '{print $1}'` - Use a different column separator than space and print the first column
+
 `awk -F ":" '{print $1} /etc/passwd` - A different notation to use a different column separator than space and print the first column
+
 `awk 'BEGIN{FS=":"; OFS="-"} print $1,$6,$7}' /etc/passwd` - Replace a field separator with another field separator and print some columns
+
 `cat /etc/shells | awk -F "/" '/^\// {print $NF}' | uniq` - Last field when searching for a pattern
+
 `df | awk '/\/dev\/loop/ {print $1 $4 + $5}'` - Again awk but having a sum of $4 and $5
+
 `cat /etc/shells | awk 'length($0) > 7'` - Print only the lines which have a first column length of longer than 7
+
 `awk 'BEGIN { for(i=1; i<=10; i++) print "The square root of",i,"is",i*i;}'` - Kind of programming in AWK
+
 `cat /etc/shells | awk '{print substr($0,4)}'` - Use the substr function of AWK
+
 `df | awk 'NR==7, NR==11 {print NR, $0}'` | Print line 7 to 11 and print the line including the line number
 
 ### Docker
@@ -102,6 +147,9 @@
 ### More Commands
 
 `cmp <file1> <file2>` - Compares the difference between two files
+
 `comm <file1> <file2>` - Find lines in common
+
 `script <filename>` - Record a log of your terminal session
+
 `jot <number>` - Generate test data with jot
