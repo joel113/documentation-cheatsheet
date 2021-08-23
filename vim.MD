@@ -11,16 +11,26 @@ k
 l
 H
 M
-E
+L
 ```
 
-`w` - Jump forwards to the end of a word
-`b` - Jump forwards to the start of the a word
+`w` - Jump forwards to the beginning of a word
+
+`e` - Jump forwards to the end of a word
+
+`b` - Jump backwards to the start of the a word
+
 `0` - Jump to the start of the line
+
 `$` - Jump to the end of the line
+
+`gg` - Go to the first line of the file
+
 `Shift + G` - Goto end of file
 
 ## Insert
+
+`i` - Enter the insert mode
 
 `A` - Append at the of the line and enter the insert mode
 
@@ -61,5 +71,7 @@ https://vim.fandom.com/wiki/Search_and_replace
 ## Plugins
 
 https://github.com/junegunn/vim-plug
+
 https://github.com/vim-airline/vim-airline
+
 https://github.com/vim-airline/vim-airline-themes
