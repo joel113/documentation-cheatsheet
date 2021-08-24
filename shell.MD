@@ -46,6 +46,12 @@
 
 `tr -d '\n' < file.txt > newfile.txt` - Removes newline character from file.txt and writes the result to newfile.txt
 
+## Generating
+
+`openssl rand -base64 12` - Generates a base64 string with a length of 12
+
+`openssl rand -hex 13` - Generates a hex string with a length of 1## Generating
+
 ## Tailing
 
 `less +f` - Less and follow (shift-f to reattach after scrolling)
