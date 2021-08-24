@@ -66,6 +66,10 @@
 
 ` ls -s` - Don't add a command to the history
 
+`ls $_` - Rerun a command (i.e. ls) with the last argument
+
+`ls !$` - Rerun a command (i.e. ls) with the last argument
+
 ## Compression
 
 `tar -zcvf archive.tar.gz directory-name` - Tar.gz a whole directory
