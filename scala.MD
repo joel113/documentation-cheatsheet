@@ -1,5 +1,70 @@
 # Scala Cheat Sheet
 
+# Lambda Function
+
+`(value: String) => println(value)`
+
+# Pattern Matching
+
+## Matching a List
+
+### List Extractors
+
+```
+scala> val match_lambda = (list: List[Int]) => list match {
+     |      case List() => s"Found an empty list!"
+     |      case List(1) => s"Found a list with a 1!"
+     |      case List(1,2) => s"Found a list with a 1 and a 2!"
+     |      case List(1,2,3) => s"Found a list with a 1, 2 and a 3!"
+     |      case _ => s"Found something else!"
+     |      }
+
+scala> val list = List(1,2,3)
+val list: List[Int] = List(1, 2, 3)
+
+scala> match_lambda(list)
+val res0: String = Found a list with a 1, 2 and a 3!
+```
+
+### Haskell Tyle
+
+```
+scala> list match {
+     | case 1 :: other => "This list is starting with a 1"
+     | case _ => "Everything else!"
+     | }
+val res3: String = This list is starting with a 1
+```
+
+### List Vararg Pattern
+
+```
+scala> list match {
+     | case List(_, 2, _*) => "This list has a 2 on the second position!"
+     | case _ => "Everything else!"
+     | }
+val res4: String = This list has a 2 on the second position!
+```
+
+### List Infix Pattern
+
+```
+scala> val list = List(1,2)
+val list: List[Int] = List(1, 2)
+
+scala> list match {
+     | case List(1) :+ 2 => "This list is starting with a 1"
+     | case _ => "Everything else!"
+     | }
+val res7: String = This list is starting with a 1
+```
+
+## Pattern Matching Lins
+
+https://dzone.com/articles/8-scala-pattern-matching-tricks
+
+# Mapping and Transforming
+
 ## flatmap
 
 flatmap maps every element of a collection including arrays, sequences and lists and removes the most inner grouping of the collection.
