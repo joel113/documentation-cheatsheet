@@ -141,3 +141,29 @@ https://commitlogs.com/2016/09/10/scala-fold-foldleft-and-foldright/
 # Lists
 
 `val result = Option(listMaybeEmpty).filter(_.nonEmpty).map(List("bla"))` - Returns a List with a default string if the other list is empty 
+
+# Futures
+
+A `future` is placeholder object for a value that may not yet exists. By default, future and promises are non-blocking, making use of callbacks instead of typical blocking operations. Future and promises reolve around `ExecutionContext`, which are responsible for execution computations. An `ExecutionContext` is free to execute computations in a new thread, in a pooled thread or in the current thread. By default, the `ExecutionContext.global` sets the parallelism level of its underlying fork-join pool to the number of available processors. The `ForkJoinPool` can increase the number of threads beyonds its `paralelismLevel` in the precense of a blocking operation.
+
+Using Futures means, that an operation independent whether it is blocking or non-blocking is executed on a new thread. In a JVM, it is a Java Thread which is still heavy weight. Hence, it is essential to employ asynchronous communication and avoid blocking in general to utilize the threads as best as possible even if the execution of futures is delegated to a seperate execution context. It is even considered harmful to perform waits on Futures as this also results in a blocking operation. Instead, Callbacks or combinators should be used.
+
+
+```
+ìmplicit val ec: ExecutionContext = ...
+val inverseFuture: Future[Matrix] = Future {
+	fatMatrix.inverse()
+}
+```
+
+## Futures Links
+
+https://docs.scala-lang.org/overviews/core/futures.html
+https://blog.colinbreck.com/calling-blocking-code-there-is-no-free-lunch/
+
+# Fibers
+
+## Fibers Links
+
+https://blog.softwaremill.com/will-project-loom-obliterate-java-futures-fb1a28508232
+https://typelevel.org/blog/2021/02/21/fibers-fast-mkay.html
