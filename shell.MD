@@ -154,6 +154,12 @@
 
 `docker run -it -rm alpine` - Runs an alpine image and logs into the shell
 
+### Printing
+
+`tldr` - Shows simplified and community-driven man pages
+
+`bat` - Cat clone with syntax highlighting and git integration
+
 ### More Commands
 
 `cmp <file1> <file2>` - Compares the difference between two files
