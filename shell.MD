@@ -170,6 +170,8 @@
 
 ### More Commands
 
+`watch docker ps` - Watch a command
+
 `ls -1 | parallel echo` - Parallel echo
 
 `cmp <file1> <file2>` - Compares the difference between two files
