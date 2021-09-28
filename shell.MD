@@ -160,7 +160,17 @@
 
 `bat` - Cat clone with syntax highlighting and git integration
 
+### Searching
+
+`find /tmp -name 'foo.txt'` - Search for a file called foo.txt
+
+### Sorting
+
+`sort -u` - Sorts and removes duplicates
+
 ### More Commands
+
+`ls -1 | parallel echo` - Parallel echo
 
 `cmp <file1> <file2>` - Compares the difference between two files
 
