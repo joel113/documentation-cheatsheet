@@ -160,6 +160,8 @@
 
 `bat` - Cat clone with syntax highlighting and git integration
 
+`bat -A file.csv` - Pretty prints a csv and shows also non-printable characters
+
 ### Searching
 
 `find /tmp -name 'foo.txt'` - Search for a file called foo.txt
