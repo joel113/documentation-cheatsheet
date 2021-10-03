@@ -158,6 +158,10 @@
 
 `exiftool -d '%Y%m%d-%H%M%S.jpg' '-filename<CreateDate' .` - Rename file names of pictures and use a formatted datetimestamp
 
+## Video Processing
+
+`ffmpeg -i 20201205150626.MTS -c:v copy -c:a copy -f mp4 20201205150626.MP4 ` - Converts a mts into a mp4 video
+
 ## Docker
 
 `docker run -it -rm alpine` - Runs an alpine image and logs into the shell
