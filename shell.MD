@@ -78,6 +78,10 @@
 
 `curl -h "Accept-Encoding: gzip" -I https://www.google.com` - Retrieves a web page asking for a gzip compression
 
+## Date
+
+`date +"%Y%m%d-%H%M%S"` - Return a formatted datetimestamp
+
 ## Files
 
 `lsof -u joel` - Gets the open files of the user joel
@@ -150,7 +154,11 @@
 
 `df | awk 'NR==7, NR==11 {print NR, $0}'` | Print line 7 to 11 and print the line including the line number
 
-### Docker
+## Image Processing
+
+`exiftool -d '%Y%m%d-%H%M%S.jpg' '-filename<CreateDate' .` - Rename file names of pictures and use a formatted datetimestamp
+
+## Docker
 
 `docker run -it -rm alpine` - Runs an alpine image and logs into the shell
 
