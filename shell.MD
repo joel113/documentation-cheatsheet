@@ -1,4 +1,4 @@
-# Shell Cheat Sheet
+# Shell (ZSH) Cheat Sheet
 
 ## Cursor
 
@@ -6,9 +6,9 @@
 
 `Ctrl-e` - Moves the cursor to the end of the line
 
-`Option-b` - Moves the cursor forward by a word
+`Option-RightArrowKey` - Moves the cursor forward by a word
 
-`Option-f` - Moves the cursor backward by a word
+`Option-LeftArrorKey` - Moves the cursor backward by a word
 
 `Ctrl-l` - Clears the screen
 
