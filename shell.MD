@@ -160,7 +160,13 @@
 
 ## Video Processing
 
-`ffmpeg -i 20201205150626.MTS -c:v copy -c:a copy -f mp4 20201205150626.MP4 ` - Converts a mts into a mp4 video
+`ffmpeg -i input.mts -c:v copy -c:a copy -f mp4 output.mp4` - Converts a mts into a mp4 video
+
+`ffmpeg -i input.mp4 -vcodec libx265 -crf 30 output.mp4` - Convers a mts into a libx265 encoded video
+
+## Security and SSL/TLS
+
+`openssl x509 -in keyname.pem -text` - Prints the content of a certificate
 
 ## Docker
 
