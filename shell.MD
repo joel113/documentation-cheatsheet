@@ -60,6 +60,45 @@
 
 `cat somefile | tee -a log.txt | cat > /dev/null` - Log output but not show on the console
 
+## Iterating
+
+```
+for COLOR in red white; do
+< wine-$COLOR.csv tr '[A-Z]; ' '[a-z],_' | tr -d \" > wine-${COLOR}-clean.csv
+done
+```
+
+Iterates the string list 'red white' and applies it to the line which follow do and prepends done. tr replaces and deletes some characters.
+
+```
+`for i in {0..100..2}
+> do
+> echo "$i^2" | bc
+> done | trim
+```
+
+Iterates from 0 to 100 with steps of 2 and passes the value to bc.
+
+```
+$ while read line                          
+> do
+> echo "Sending invitation to ${line}."    
+> done < emails 
+```
+
+Reads from the stdin an echos some text.
+
+```
+$ for chapter in /data/*
+> do
+> echo "Processing Chapter ${chapter}."
+> done
+```
+
+Loops over files in a directory.
+
+`$ seq 0 2 100 | parallel "echo {}^2 | bc" | trim` - Iterates a sequence and passes the value to a parallel execution of bc
+
 ## History
 
 `fc` - Fix or change a really long command that you run last with a text editor
@@ -124,7 +163,11 @@
 
 `echo "${s%%.*}" - Match some characters from the passed string
 
-### Json Processing
+## Calculating
+
+`echo "4+2" | bc` - Basic caluclator which adds 2 to 1
+
+## Json Processing
 
 `cat example.json | jq '.'` - Print a json file nicely formatted
 
@@ -132,7 +175,16 @@
 
 `cat example.json | jq '.[0]["greeting"]' - Print the greeting element of the first element of a json file nicely formatted
 
-### AWK
+## Csv Processing
+
+```
+csvstack -g red,white -n type wine-{red,white}-clean.csv | 1
+xsv select 2-,1 > wine.csv
+```
+
+Combines two csv files to a single file using xsv select as well as csvstack
+
+## AWK
 
 `ps | awk '{print $1}'` - Print the first column of each line
 
@@ -172,7 +224,7 @@
 
 `docker run -it -rm alpine` - Runs an alpine image and logs into the shell
 
-### Printing
+## Printing
 
 `tldr` - Shows simplified and community-driven man pages
 
@@ -180,19 +232,21 @@
 
 `bat -A file.csv` - Pretty prints a csv and shows also non-printable characters
 
-### Searching
+## Searching
 
 `find /tmp -name 'foo.txt'` - Search for a file called foo.txt
 
-### Sorting
+## Sorting
 
 `sort -u` - Sorts and removes duplicates
 
-### More Commands
+## More Commands
 
 `watch docker ps` - Watch a command
 
 `ls -1 | parallel echo` - Parallel echo
+
+`parallel --jobs 2 ./slow.sh ::: {A..C}` - Parallel execution of a slow shell script
 
 `cmp <file1> <file2>` - Compares the difference between two files
 
