@@ -97,6 +97,14 @@ $ for chapter in /data/*
 
 Loops over files in a directory.
 
+```
+$ while read line; do
+> echo "$line"
+> done < "$filename"
+```
+
+Loops over the lines of a file.
+
 `$ seq 0 2 100 | parallel "echo {}^2 | bc" | trim` - Iterates a sequence and passes the value to a parallel execution of bc
 
 ## History
