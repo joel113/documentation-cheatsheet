@@ -50,6 +50,8 @@
 
 `ls -ld $(date +%B).txt` - Performs a command substitution which embeds the result in an another command
 
+`echo ${animal}s` - Performs a parameter substitution where a character immediately follows the variable name
+
 Performs a command substitution which considers a variable $var1.
 
 ```
