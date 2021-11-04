@@ -46,6 +46,16 @@
 
 `tr -d '\n' < file.txt > newfile.txt` - Removes newline character from file.txt and writes the result to newfile.txt
 
+## Variables
+
+`ls -ld $(date +%B).txt` - Performs a command substitution which embeds the result in an another command
+
+Performs a command substitution which considers a variable $var1.
+
+```
+var2=$(echo "$var1")
+```
+
 ## Generating
 
 `openssl rand -base64 12` - Generates a base64 string with a length of 12
@@ -182,6 +192,8 @@ Loops over the lines of a file.
 `cat example.json | jq '.[0]' - Print the first element of a json file nicely formatted
 
 `cat example.json | jq '.[0]["greeting"]' - Print the greeting element of the first element of a json file nicely formatted
+
+`cat example.json | jq --arg e "${variable}" '.data[$e] += ["test1"]'` - Pass a variable or environment variable to jq to use it in a jq operation
 
 ## Csv Processing
 
