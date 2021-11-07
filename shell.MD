@@ -52,6 +52,8 @@
 
 `echo ${animal}s` - Performs a parameter substitution where a character immediately follows the variable name
 
+`mkdir dir && cd $_` - Creates a command while changing directory to it as $_ holds the argument passed to the previous command
+
 Performs a command substitution which considers a variable $var1.
 
 ```
@@ -67,6 +69,28 @@ var2=$(echo "$var1")
 ## Tailing
 
 `less +f` - Less and follow (shift-f to reattach after scrolling)
+
+## Job Control
+
+`dosth &` - Runs the command in the background, the process can be stopped using ctrl+z and continue it with bg or in the foreground with fg
+
+`nohup dosth &` - Runs the command in the background while decoupeling it from unix signals
+
+`dosth &> /dev/null &` - Runs the command in the background while detaching it from the output/error streams of the shell
+
+`jobs` - Shows the currently running jobs
+
+`fg` - Return to the background job
+
+`fg %2` - Return to the background job 2
+
+`kill %2` - Kill the background job 2
+
+`Ctrl-C` - Kill the current foreground job
+
+`Ctrl-Z` - Pause the current foreground job
+
+`bg` - Background and resume a job again
 
 ## Piping
 
