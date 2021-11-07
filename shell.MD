@@ -10,6 +10,8 @@
 
 `Option-LeftArrorKey` - Moves the cursor backward by a word
 
+`Ctrl-t` - Swaps the current character with the one preceding it
+
 `Ctrl-l` - Clears the screen
 
 `Ctrl-r` - Reverse search
@@ -18,17 +20,29 @@
 
 `Ctrl-g` - Leave the search
 
-`Ctrl-k` - Kill to the end of the line
+## Cut and Yank
 
-`Ctrl-u` - Kill to the beginning of the line
+`Ctrl-k` - Cut / kill to the end of the line
+
+`Ctrl-u` - Cut / kill to the beginning of the line
 
 `Ctrl-y` - Yanks the line
 
-`Ctrl-w` - Kill to the next whitespace of the line
+`Ctrl-w` - Cut / kill to the previous whitespace of the line
+
+`Alt-d` - Cut / kill to the next whitespace of the line
 
 `Ctrl-x-e` - Edits the current command in an editor
 
 `alt-.` - Repeats the previous argument
+
+## Operators
+
+`sudo !!` - !! expands into the previous command
+
+`ls index.*` - Matches any file with an arbitrary file ending
+
+`ls index.???` - Match any file with a three letter file ending
 
 ## Moving
 
@@ -47,6 +61,10 @@
 `tr -d '\n' < file.txt > newfile.txt` - Removes newline character from file.txt and writes the result to newfile.txt
 
 ## Variables
+
+`touch count-{123}.txt` - Generatres three files count-1.txt, count-2.txt and count-3.txt
+
+`touch count-{1..3}.txt` - Generates the same files as above
 
 `ls -ld $(date +%B).txt` - Performs a command substitution which embeds the result in an another command
 
