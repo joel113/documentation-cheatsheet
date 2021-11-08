@@ -44,6 +44,14 @@
 
 `ls index.???` - Match any file with a three letter file ending
 
+## Here
+
+`cat <<< 'hello'` - Passses a here string to the cat command
+
+`cat <<EOF` - Passes a here document to the cat command
+
+`cat < /home/foobar` - Passes the foobar file to a command std in
+
 ## Moving
 
 `mv file{,extension}.log` - Appends "extension" to the file name
@@ -238,6 +246,17 @@ Loops over the lines of a file.
 `cat example.json | jq '.[0]["greeting"]' - Print the greeting element of the first element of a json file nicely formatted
 
 `cat example.json | jq --arg e "${variable}" '.data[$e] += ["test1"]'` - Pass a variable or environment variable to jq to use it in a jq operation
+
+`jq <<< {}` - Creates an empty json document
+
+`jq '."my_arg"="my_val"' <<< {}` - Creates a json document containing only my_arg and my_val
+
+```
+$ command="sleep '5'; echo 'done here'"
+$ jq --arg key "commands" --arg value "$command" '.[$key]=[$value]' <<< {}
+```
+
+Creates a json document containing a key and a value passed by arguments.
 
 ## Csv Processing
 
