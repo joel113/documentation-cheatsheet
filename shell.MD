@@ -233,7 +233,7 @@ Loops over the lines of a file.
 
 `grep -rn /foobar/ -e text_to_find` - Find a text in a directory resursively
 
-`echo "${s%%.*}" - Match some characters from the passed string
+`echo "${s%%.*}"` - Match some characters from the passed string
 
 ## Calculating
 
@@ -243,9 +243,9 @@ Loops over the lines of a file.
 
 `cat example.json | jq '.'` - Print a json file nicely formatted
 
-`cat example.json | jq '.[0]' - Print the first element of a json file nicely formatted
+`cat example.json | jq '.[0]'` - Print the first element of a json file nicely formatted
 
-`cat example.json | jq '.[0]["greeting"]' - Print the greeting element of the first element of a json file nicely formatted
+`cat example.json | jq '.[0]["greeting"]'` - Print the greeting element of the first element of a json file nicely formatted
 
 `cat example.json | jq --arg e "${variable}" '.data[$e] += ["test1"]'` - Pass a variable or environment variable to jq to use it in a jq operation
 
