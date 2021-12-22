@@ -34,6 +34,14 @@ L
 
 `A` - Append at the of the line and enter the insert mode
 
+## Visual
+
+`v` - Enter the visual mode
+
+`V` - Enter the visual line mode
+
+`Ctrl + v` - Enter the block visual mode
+
 ## Copy and Paste
 
 `yy` - yank the current line
