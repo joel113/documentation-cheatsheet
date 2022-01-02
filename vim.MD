@@ -34,6 +34,14 @@ L
 
 `A` - Append at the of the line and enter the insert mode
 
+## Delete
+
+`dw` - Delete from the current position to the beginning of the next word
+
+`d$` or `D` - Delete from the current position to the end of the current line
+
+`c$` or `C` - Delete from the current position to the end of the current line and enter insert mode
+
 ## Visual
 
 `v` - Enter the visual mode
