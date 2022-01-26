@@ -239,6 +239,12 @@ Loops over the lines of a file.
 
 `echo "4+2" | bc` - Basic caluclator which adds 2 to 1
 
+## Binary Data Processing
+
+`echo "abcd" | xxd -r -p | base64` - Turn a hex encoded string into a base64 encoded string
+
+`echo "foobar" | base64 --decode | od -t x1 -An` - Turn a base64 encoded string into a hex encoded string
+
 ## Json Processing
 
 `cat example.json | jq '.'` - Print a json file nicely formatted
