@@ -10,6 +10,8 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 `apk --update add curl`
 
+`kubectl cp alpine:message.avro ~/message.avro` - copies a file from a pod to the local directory
+
 ## Logs
 
 `kubectl logs deployment/foobar -c app -n namespace --follow` - show logs of foobar deployment
