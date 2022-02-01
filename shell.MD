@@ -335,6 +335,8 @@ Combines two csv files to a single file using xsv select as well as csvstack
 
 `watch docker ps` - Watch a command
 
+`watch -n 5 echo "foobar"` - Watch a command every 5 seconds
+
 `ls -1 | parallel echo` - Parallel echo
 
 `parallel --jobs 2 ./slow.sh ::: {A..C}` - Parallel execution of a slow shell script
