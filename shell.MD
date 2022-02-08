@@ -245,6 +245,8 @@ Loops over the lines of a file.
 
 `echo "foobar" | base64 --decode | od -t x1 -An` - Turn a base64 encoded string into a hex encoded string
 
+`echo -ne "\x1e\x07" | od -t x1` - Turns a unicode bytes into a hex encoded string
+
 ## Json Processing
 
 `cat example.json | jq '.'` - Print a json file nicely formatted
