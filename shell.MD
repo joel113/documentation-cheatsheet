@@ -317,6 +317,12 @@ Combines two csv files to a single file using xsv select as well as csvstack
 
 `docker run -it -rm alpine` - Runs an alpine image and logs into the shell
 
+## SSH
+
+`ssh -f -N -D 127.0.0.1:8080 remoteserver` - Creates a socks proxy for application level fowarding
+
+`curl --proxy socks5h://127.0.0.1:8080 https://remote.remoteserver` - Requests a remote server via a socks proxy
+
 ## Printing
 
 `tldr` - Shows simplified and community-driven man pages
