@@ -1,5 +1,19 @@
 # Shell (ZSH) Cheat Sheet
 
+## Metacharacters
+
+`|` - Pipes the result of a command into a subsequent command
+
+`>` - Redirects the output of the result of a command
+
+`*` - Asterisk * or wildcard
+
+`~` - Home directory shortcut
+
+`$` - Any string which ends with a given string, e.g.: 'png$'
+
+`^` - Any string which starts with a given string, e.g.: '^$Screen'
+
 ## Cursor
 
 `Ctrl-a` - Moves the cursor to the beginning of the line
