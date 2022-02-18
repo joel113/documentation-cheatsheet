@@ -135,3 +135,9 @@ https://git-scm.com/docs/git-worktree
 `git commit --amend --no-edit`
 
 `git rebase --continue`
+
+## Git Secrets
+
+Git Secrets command based on https://github.com/awslabs/git-secrets
+
+`git secrets --scal /path/to/file` - Scans a directory recursively for secrets
