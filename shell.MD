@@ -64,7 +64,7 @@
 
 `cat <<EOF` - Passes a here document to the cat command
 
-`cat < /home/foobar` - Passes the foobar file to a command std in
+`bat < /home/foobar` - Passes the foobar file to the bat command std in
 
 ## Moving
 
