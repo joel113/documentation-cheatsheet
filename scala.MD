@@ -1,14 +1,24 @@
 # Scala Cheat Sheet
 
-# Lambda Function
+## Main function
+
+```
+object Main {
+	def main(args: Array[String]): Unit = {
+		// do here something
+	}
+}
+```
+
+## Lambda Function
 
 `(value: String) => println(value)`
 
-# Pattern Matching
+## Pattern Matching
 
-## Matching a List
+### Matching a List
 
-### List Extractors
+#### List Extractors
 
 ```
 scala> val match_lambda = (list: List[Int]) => list match {
@@ -26,7 +36,7 @@ scala> match_lambda(list)
 val res0: String = Found a list with a 1, 2 and a 3!
 ```
 
-### Haskell Tyle
+#### Haskell Tyle
 
 ```
 scala> list match {
@@ -36,7 +46,7 @@ scala> list match {
 val res3: String = This list is starting with a 1
 ```
 
-### List Vararg Pattern
+#### List Vararg Pattern
 
 ```
 scala> list match {
@@ -46,7 +56,7 @@ scala> list match {
 val res4: String = This list has a 2 on the second position!
 ```
 
-### List Infix Pattern
+#### List Infix Pattern
 
 ```
 scala> val list = List(1,2)
@@ -59,17 +69,17 @@ scala> list match {
 val res7: String = This list is starting with a 1
 ```
 
-## Pattern Matching Lins
+### Pattern Matching Links
 
 https://dzone.com/articles/8-scala-pattern-matching-tricks
 
-# Mapping and Transforming
+## Mapping and Transforming
 
-## flatmap
+### flatmap
 
 flatmap maps every element of a collection including arrays, sequences and lists and removes the most inner grouping of the collection.
 
-### flatmap with options
+#### flatmap with options
 
 ```
 scala> val strings = Seq("1", "2", "foo", "3", "bar")
@@ -85,7 +95,7 @@ scala> strings.flatMap(toInt).sum
 res2: Int = 6
 ```
 
-### flatmap with functions
+#### flatmap with functions
 
 ```
 scala> val list = List(1,2,3,4,5)
@@ -101,7 +111,7 @@ scala> list.flatMap(x => g(x))
 res1: List[Int] = List(0, 1, 2, 1, 2, 3, 2, 3, 4, 3, 4, 5, 4, 5, 6)
 ```
 
-### flatmap with maps
+#### flatmap with maps
 
 ```
 scala> val map = Map(1 -> "one", 2 -> "two", 3 -> "three")
@@ -111,13 +121,13 @@ scala> 1 to map.size flatMap(map.get)
 res0: scala.collection.immutable.IndexedSeq[java.lang.String] = Vector(one, two, three)
 ```
 
-### flatmap links
+#### flatmap links
 
 https://alvinalexander.com/scala/collection-scala-flatmap-examples-map-flatten/
 
-## fold
+### fold
 
-### foldLeft
+#### foldLeft
 
 Iterates a list from left to right, passes the element and an accumulator to some function while the result is passed as accumulator to the next iteration.
 
@@ -134,15 +144,15 @@ val res12: Seq[Int] = List(1, 3, 5)
 
 Folding can also be used to calculate the length, the last or the average. It can be used to reverse or to operate on options.
 
-### fold links
+#### fold links
 
 https://commitlogs.com/2016/09/10/scala-fold-foldleft-and-foldright/
 
-# Lists
+## Lists
 
 `val result = Option(listMaybeEmpty).filter(_.nonEmpty).map(List("bla"))` - Returns a List with a default string if the other list is empty 
 
-# Futures
+## Futures
 
 A `future` is placeholder object for a value that may not yet exists. By default, future and promises are non-blocking, making use of callbacks instead of typical blocking operations. Future and promises reolve around `ExecutionContext`, which are responsible for execution computations. An `ExecutionContext` is free to execute computations in a new thread, in a pooled thread or in the current thread. By default, the `ExecutionContext.global` sets the parallelism level of its underlying fork-join pool to the number of available processors. The `ForkJoinPool` can increase the number of threads beyonds its `paralelismLevel` in the precense of a blocking operation.
 
@@ -156,14 +166,14 @@ val inverseFuture: Future[Matrix] = Future {
 }
 ```
 
-## Futures Links
+### Futures Links
 
 https://docs.scala-lang.org/overviews/core/futures.html
 https://blog.colinbreck.com/calling-blocking-code-there-is-no-free-lunch/
 
-# Fibers
+## Fibers
 
-## Fibers Links
+### Fibers Links
 
 https://blog.softwaremill.com/will-project-loom-obliterate-java-futures-fb1a28508232
 https://typelevel.org/blog/2021/02/21/fibers-fast-mkay.html
