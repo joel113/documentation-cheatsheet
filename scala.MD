@@ -73,6 +73,39 @@ val res7: String = This list is starting with a 1
 
 https://dzone.com/articles/8-scala-pattern-matching-tricks
 
+## Iterating
+
+### For Loops
+
+```
+val nums = Seq(1,2,3)
+for (n <- nums) println(n)
+```
+
+### Foreach Method
+
+```
+val people = Seq("Johannes","Alexander","Johanna", "Alexandra")
+people.foreach(println)
+```
+
+### For and Foreach Decomposition
+
+```
+val movieLength = Map(
+	"Movie A" -> 123,
+	"Movie B" -> 256,
+	"Movie C" -> 33
+)
+
+for((name, length) <- movieLength) println(s"Movie $name takes $length minutes.")
+
+movieLength.foreach {
+	case(name, length) => println(s"Movie $name takes $length minutes.")
+}
+
+```
+
 ## Mapping and Transforming
 
 ### flatmap
