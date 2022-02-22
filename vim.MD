@@ -28,6 +28,8 @@ L
 
 `Shift + G` - Goto end of file
 
+`:123` or `123G` or `123gg` - Goto line 123
+
 ## Insert
 
 `i` - Enter the insert mode
