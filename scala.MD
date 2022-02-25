@@ -10,6 +10,10 @@ object Main {
 }
 ```
 
+## Map
+
+`"10,20,30,60,50".split(",").map(_.toInt).sorted` - Splits, maps and sorts
+
 ## Lambda Function
 
 `(value: String) => println(value)`
