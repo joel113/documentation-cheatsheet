@@ -370,3 +370,9 @@ Combines two csv files to a single file using xsv select as well as csvstack
 `script <filename>` - Record a log of your terminal session
 
 `jot <number>` - Generate test data with jot
+
+## Shell Programming
+
+`if [[ $var ]]; then` - var is set and not empty
+
+`if [[ ! $var ]]; then` - var is not set or it is set to an empty string
