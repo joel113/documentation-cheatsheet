@@ -31,3 +31,13 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 `kubectl describe order example-com-2745722290-439160286` - Returns more information about a specific order
 
 `kubectl describe challenge example-com-2745722290-4391602865-0` - Returns more information about a specific challenge
+
+## Context
+
+`kubectl config view` - Shows kubectl config configuration
+
+`kubectl config view -o jsonpath='{.users[].name}'` - Shows user names in kubectl config configuration
+
+`kubectl config use-context my-cluster-name` - Sets the current context to my-cluster-name
+
+`kubectl config unset current-context` - Resets the current context
