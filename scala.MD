@@ -214,3 +214,17 @@ https://blog.colinbreck.com/calling-blocking-code-there-is-no-free-lunch/
 
 https://blog.softwaremill.com/will-project-loom-obliterate-java-futures-fb1a28508232
 https://typelevel.org/blog/2021/02/21/fibers-fast-mkay.html
+
+## Circe
+
+Filter empty arrays, empty values and null values from a json file.
+
+```
+implicit val somethingEncoder: Encoder[Something] = deriveEncoder[Something]
+	.mapJsonObjeect(_.filter {
+		case ("Something", value) if value.asArray.isDefined => value.asArray.get.nonEmpty
+		case _ => true
+	})
+	.mapJson(_.dropEmptyValues)
+	.mapJson(_.dropNullValues)
+```
