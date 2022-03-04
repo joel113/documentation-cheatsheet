@@ -1,6 +1,6 @@
-# Git Pull Request Preperation & Reviews
+# Pull Request Preperation & Reviews
 
-## Git Pull Request Preperation
+## Pull Request Preperation
 
 1. Optimize Imports
 
