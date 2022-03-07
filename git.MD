@@ -28,9 +28,17 @@ https://git-scm.com/docs
 
 ## Git Stage
 
-`git add` - Stage files: 
+`git add` - Stage files 
 
 `git add -p` - Interactively stage files
+
+## Git Tag
+
+`git tag` - Shows the git tags of the current branch
+
+`git tag tag_name` - Adds a git tag to the current branch
+
+`git push origin tag_name` - Pushes the git tag to the origin remote
 
 ## Git Stash
 
