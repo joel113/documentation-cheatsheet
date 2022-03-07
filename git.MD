@@ -14,6 +14,12 @@ https://git-scm.com/docs
 
 `git checkout <commitid>` - Git checkout specific commit id
 
+## Git Pull
+
+`git pull origin master` - Pulls changes from the origin remote, master branch and merge them to the local checked-out branch
+
+`git pull origin/master` - Pulls changes from the local branch origin/master and merge them to the local checked-out branch
+
 ## Git Commit
 
 `git commit --amend` - Git commit ammend
