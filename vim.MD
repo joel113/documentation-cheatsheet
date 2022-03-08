@@ -44,6 +44,8 @@ L
 
 `c$` or `C` - Delete from the current position to the end of the current line and enter insert mode
 
+`dG` - Delete from the current line to the end of the file
+
 ## Visual
 
 `v` - Enter the visual mode
@@ -81,6 +83,36 @@ L
 ### More information
 
 https://vim.fandom.com/wiki/Search_and_replace
+
+## Search and Command
+
+`:g/pattern/d` - Delete all lines matching the pattern
+
+`:g!/pattern/d` - Delete all lines not matching the pattern
+
+`:v/pattern/d` - Delete all lines not matching the pattern
+
+`:g/pattern/z#.5` - Display context (5 lines) for all occurences of a pattern
+
+`:g/^\s*$/d` - Delete all blank lines where `^` is the start of the line `\s*` is zero or more whitespaces and `$` is the end of the line
+
+`:g/pattern/t$` - Copy all lines matching a pattern to end of file
+
+`:g/pattern/m$` - Move all lines matching a pattern to end of file
+
+## Window Management
+
+`:split` - Horizontally split the editor
+
+`:vsplit` - Vertically split the editor
+
+`Ctrl + W` - Switches to an other window
+
+`:close` - Closes the current window
+
+## File Management
+
+`:edit foo.txt` - Starts editing another file foo.txt
 
 ## JSON
 
