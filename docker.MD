@@ -12,6 +12,8 @@
 
 `docker run amazoncorreto:17 java --version` - Runs amazon correto and prints the java version
 
+`docker un -it -e FOO=BAR -t image_tag_name_and_version` - Runs an image and passes the environmental variable FOO with the value BAR
+
 [Docker Run Reference](https://docs.docker.com/engine/reference/run/)
 
 ## Exec
