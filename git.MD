@@ -12,6 +12,8 @@ https://git-scm.com/docs
 
 `git checkout -` - Git checkout the previous branch again
 
+`git checkout @{-N}` - Git checkout to the n-th previous branch again
+
 `git checkout <commitid>` - Git checkout specific commit id
 
 ## Git Pull
