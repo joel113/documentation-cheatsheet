@@ -80,6 +80,8 @@ https://git-scm.com/docs
 
 ## Git Push
 
+`git push origin branchA:branchB` - Does a push from A local branch to B remote branch
+
 `git push -f` - Does a force push
 
 `git push --force-with-lease` - Checks the remote branch for changes before force push
