@@ -88,6 +88,10 @@ https://vim.fandom.com/wiki/Search_and_replace
 
 `:g/pattern/d` - Delete all lines matching the pattern
 
+`:g/^match/yank` - Copy all lines matching the pattern
+
+`:g/^match/yank A` - Copy all lines matching the pattern and appends it to buffer a
+
 `:g!/pattern/d` - Delete all lines not matching the pattern
 
 `:v/pattern/d` - Delete all lines not matching the pattern
