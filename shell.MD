@@ -203,6 +203,10 @@ Loops over the lines of a file.
 
 `curl -h "Accept-Encoding: gzip" -I https://www.google.com` - Retrieves a web page asking for a gzip compression
 
+## Web Sockets
+
+`wscat -c ws://websocket-echo.com` - Connects to host via web sockets
+
 ## Date
 
 `date +"%Y%m%d-%H%M%S"` - Return a formatted datetimestamp
