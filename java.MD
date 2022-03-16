@@ -9,3 +9,13 @@
 ## String Operations
 
 `String message = "Hi, %s".formatted("Johannes")` - Interpolates a string
+
+## Java Streams
+
+```
+result = employees.stream().filter(e -> !e.isActive()).count() > 0;
+```
+
+```
+result = employees.stream().anyMatch(e -> !e.isActive());
+```
