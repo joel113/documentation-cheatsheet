@@ -84,6 +84,14 @@
 
 `tr -d '\n' < file.txt > newfile.txt` - Removes newline character from file.txt and writes the result to newfile.txt
 
+## Replacing
+
+`echo bla | tr 'abcd' 'jkm'` - Replaces all occurences of a character with another character
+
+`echo foobar | sed 's/bar/bla/' - Replaces the first occurence of bar with bla
+
+`echo foobar | sed 's/bar/bla/g' - Replaces all occurences of bar with bla
+
 ## Variables
 
 `touch count-{123}.txt` - Generatres three files count-1.txt, count-2.txt and count-3.txt
