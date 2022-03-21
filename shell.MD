@@ -92,6 +92,10 @@
 
 `echo foobar | sed 's/bar/bla/g' - Replaces all occurences of bar with bla
 
+## Removing
+
+`echo foobar | cut 2- | rev | cut 2- | rev` - Removes the first and the last character of a string
+
 ## Variables
 
 `touch count-{123}.txt` - Generatres three files count-1.txt, count-2.txt and count-3.txt
@@ -300,7 +304,6 @@ Creates a json document containing a key and a value passed by arguments.
 csvstack -g red,white -n type wine-{red,white}-clean.csv | 1
 xsv select 2-,1 > wine.csv
 ```
-
 Combines two csv files to a single file using xsv select as well as csvstack
 
 ## AWK
