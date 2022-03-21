@@ -74,7 +74,7 @@
 
 `for f in *.pdf; do mv "$f" "$(date "+%Y%m%d"-"$f").pdf"; done` - Prepends file date to the file name
 
-`for f in *; do mv $f "$echo $f | sed s/20211100/20211109/g)"; done` - Renames files using sed search and replace
+`for f in *; do mv $f "$(echo $f | sed s/20211100/20211109/g)"; done` - Renames files using sed search and replace
 
 `for f in *.*; do mv -v "$f" "${f:11}"; done`- Removes first eleven characters from a filename
 
