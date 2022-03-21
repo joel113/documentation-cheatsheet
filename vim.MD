@@ -28,6 +28,10 @@ L
 
 `Shift + G` - Goto end of file
 
+`Ctrl + f` - Jumps to the next page
+
+`Ctrl + b` - Jumps to the previous page
+
 `:123` or `123G` or `123gg` - Goto line 123
 
 ## Insert
