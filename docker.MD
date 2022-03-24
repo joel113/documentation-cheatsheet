@@ -122,3 +122,7 @@ CMD [ "/docker-gs-ping" ]
 `ENTRYPONT ["executable","param1","param2"]` - Executable form of an `ENTRYPOINT` which configures a container that will run as an executable
 
 `ENTRYPOINT command param1 param2` - Shell form of an `ENTRYPOINT`
+
+## Cleanup
+
+`nerdctl rm -f $(nerdctl ps -a -q)` - Removes all containers
