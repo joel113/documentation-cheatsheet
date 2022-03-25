@@ -6,13 +6,13 @@
 
 `docker run -t -i alpine` - Runs alpine linux in tty mode with STDIN open even if not attached, often `-t -i` is written as `-it`
 
-`docker run -d openjdk` - Runs openjdk in detached mode
+`docker run --name openjdk -d openjdk` - Runs openjdk in detached mode with the name openjdk
 
 `docker run -a stdin -a stdout -it ubuntu /bin/bash` - Runs an ubuntu image and select Docker attach to both stdout and stderr
 
 `docker run amazoncorreto:17 java --version` - Runs amazon correto and prints the java version
 
-`docker un -it -e FOO=BAR -t image_tag_name_and_version` - Runs an image and passes the environmental variable FOO with the value BAR
+`docker run -it -e FOO=BAR -t image_tag_name_and_version` - Runs an image and passes the environmental variable FOO with the value BAR
 
 [Docker Run Reference](https://docs.docker.com/engine/reference/run/)
 
