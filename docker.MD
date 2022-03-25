@@ -126,3 +126,5 @@ CMD [ "/docker-gs-ping" ]
 ## Cleanup
 
 `nerdctl rm -f $(nerdctl ps -a -q)` - Removes all containers
+
+`nerdctl volume rm -f $(nerdctl volume ls -q)` - Remove all volumes
