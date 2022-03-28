@@ -6,6 +6,8 @@
 
 `docker run -t -i alpine` - Runs alpine linux in tty mode with STDIN open even if not attached, often `-t -i` is written as `-it`
 
+`docker run --name nginx -d -p 8080:80 nginx` Runs nginx in detached mode with port 8080 mapped to the host
+
 `docker run --name openjdk -d openjdk` - Runs openjdk in detached mode with the name openjdk
 
 `docker run -a stdin -a stdout -it ubuntu /bin/bash` - Runs an ubuntu image and select Docker attach to both stdout and stderr
