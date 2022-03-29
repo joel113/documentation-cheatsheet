@@ -34,6 +34,8 @@ https://git-scm.com/docs
 
 `git add -p` - Interactively stage files
 
+`git rm build/*.js --ignore-unmatch` - Removes files from the index
+
 ## Git Tag
 
 `git tag` - Shows the git tags of the current branch
@@ -101,6 +103,8 @@ https://git-scm.com/docs
 `git show branch:file` - Shows the file within the branch
 
 `git show HEAD` - Shows the diff of the last commit
+
+`git ls-tree --full-tree -r head` - Shows the files from the index
 
 ## Git Branch Manipulation
 
