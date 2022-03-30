@@ -2,6 +2,7 @@
 
 ## Connect
 
+`\l` - Lists all databases
 `\c database` - Connect to database
 `\dt` - Show tables
 
