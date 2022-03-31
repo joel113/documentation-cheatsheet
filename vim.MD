@@ -84,10 +84,6 @@ L
 
 `:%s/foo/bar/g` - Find each occurance of foo and replace it with bar
 
-### More information
-
-https://vim.fandom.com/wiki/Search_and_replace
-
 ## Search and Command
 
 `:g/pattern/d` - Delete all lines matching the pattern
@@ -117,6 +113,8 @@ https://vim.fandom.com/wiki/Search_and_replace
 `Ctrl + W` - Switches to an other window
 
 `:close` - Closes the current window
+
+`:term` - Opens a terminal window
 
 ## File Management
 
