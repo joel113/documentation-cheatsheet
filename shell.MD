@@ -66,6 +66,10 @@
 
 `bat < /home/foobar` - Passes the foobar file to the bat command std in
 
+## Xargs
+
+`find . -name "*.tmp" -print0 | xargs -0 rm` - Passes the result of the first command to the second command using xargs
+
 ## Moving
 
 `mv file{,extension}.log` - Appends "extension" to the file name
