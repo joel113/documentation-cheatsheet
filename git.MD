@@ -34,6 +34,8 @@ https://git-scm.com/docs
 
 `git add -p` - Interactively stage files
 
+`git add -A` - Record all removals, additions and modifications
+
 `git rm build/*.js --ignore-unmatch` - Removes files from the index
 
 ## Git Tag
