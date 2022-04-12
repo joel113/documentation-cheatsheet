@@ -92,9 +92,9 @@
 
 `echo bla | tr 'abcd' 'jkm'` - Replaces all occurences of a character with another character
 
-`echo foobar | sed 's/bar/bla/' - Replaces the first occurence of bar with bla
+`echo foobar | sed 's/bar/bla/'` - Replaces the first occurence of bar with bla
 
-`echo foobar | sed 's/bar/bla/g' - Replaces all occurences of bar with bla
+`echo foobar | sed 's/bar/bla/g'` - Replaces all occurences of bar with bla
 
 ## Removing
 
@@ -280,6 +280,8 @@ Loops over the lines of a file.
 `echo "foobar" | base64 --decode | od -t x1 -An` - Turn a base64 encoded string into a hex encoded string
 
 `echo -ne "\x1e\x07" | od -t x1` - Turns a unicode bytes into a hex encoded string
+
+`truncate -s -1 file` - Removes one byte from the file
 
 ## Json Processing
 
