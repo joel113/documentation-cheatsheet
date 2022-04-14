@@ -84,6 +84,8 @@ L
 
 `:%s/foo/bar/g` - Find each occurance of foo and replace it with bar
 
+`:%s/\n\n/\r/g' - Replace two new lines with one new line
+
 ## Search and Command
 
 `:g/pattern/d` - Delete all lines matching the pattern
