@@ -125,6 +125,10 @@ CMD [ "/docker-gs-ping" ]
 
 `ENTRYPOINT command param1 param2` - Shell form of an `ENTRYPOINT`
 
+## BOM
+
+`docker sbom alpine:latest` - Calculates the bill of materials of the latest alpine image
+
 ## Cleanup
 
 `nerdctl rm -f $(nerdctl ps -a -q)` - Removes all containers
