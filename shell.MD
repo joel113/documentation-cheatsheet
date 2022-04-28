@@ -312,6 +312,12 @@ xsv select 2-,1 > wine.csv
 ```
 Combines two csv files to a single file using xsv select as well as csvstack
 
+```
+in2csv input.xlsx > input.csv
+```
+
+Converts an excel file into csv file
+
 ## AWK
 
 `ps | awk '{print $1}'` - Print the first column of each line
