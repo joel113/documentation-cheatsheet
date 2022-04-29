@@ -38,6 +38,10 @@ https://git-scm.com/docs
 
 `git rm build/*.js --ignore-unmatch` - Removes files from the index
 
+## Git Log
+
+`git log --all --decorate --oneline --graph` - Shows the history like a graph
+
 ## Git Tag
 
 `git tag` - Shows the git tags of the current branch
@@ -76,11 +80,15 @@ https://git-scm.com/docs
 
 `git restore -s stash@{1} -- src/main/java/Whateverfile.java` - Unstash a specific file from the stash
 
+`git restore .` - Git revert the changes to your working copy
+
 `git stash clear` - Deletes all stash entries
 
 `git stash drop` - Drops the last stash entry
 
 `git stash drop stash@{2}` - Drops a specific stash entry
+
+`git clean -fg` - Cleans untracked fils and directories
 
 ## Git Push
 
