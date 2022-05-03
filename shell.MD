@@ -58,6 +58,10 @@
 
 `ls index.???` - Match any file with a three letter file ending
 
+## Commands
+
+`eval $command` - Runs a command stored in a variable (breakout possible!)
+
 ## Here
 
 `cat <<< 'hello'` - Passses a here string to the cat command
@@ -241,9 +245,29 @@ Loops over the lines of a file.
 
 `netstat -tulpn` - Gets all ports in use
 
+`iftop` - Shows network traffic
+
+`lspci | egrep -i 'network|ethernet'` - List network interfaces
+
 ## Administration
 
+`sudo shutdown -h 19:05 "Some message..." - Shutdown at a specific time
+
 `sudo !!` - Reruns to the previous command with sudo prepended
+
+`sudo systemctl start servicename` - Starts a service using systemd
+
+`sudo systemctl stop servicename` - Stops a service using systemd
+
+`sudo systemctl restart servicename` - Restarts a service using systemd
+
+`sudo systemctl status servicename` - Checks the status of a service using systemd
+
+`sudo systemctl enable servicename` - Enables a service using systemd
+
+`sudo systemctl disable servicename` - Disables a service using systemd
+
+`crontab -e` - Edits the cronjobs
 
 ## Processes
 
@@ -382,6 +406,14 @@ Converts an excel file into csv file
 
 ## More Commands
 
+`df -k` - Shows disk usage information
+
+`lscpu` - Shows CPU usage information
+
+`man hier` - Shows a description of the file system hierarchy
+
+`uptime` - Shows the uptime of the machine
+
 `watch docker ps` - Watch a command
 
 `watch -n 5 echo "foobar"` - Watch a command every 5 seconds
@@ -397,6 +429,8 @@ Converts an excel file into csv file
 `script <filename>` - Record a log of your terminal session
 
 `jot <number>` - Generate test data with jot
+
+`uname -a` - Shows kernel release information
 
 ## Shell Programming
 
