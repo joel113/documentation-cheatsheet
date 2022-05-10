@@ -16,6 +16,14 @@ https://git-scm.com/docs
 
 `git checkout <commitid>` - Git checkout specific commit id
 
+## Git Branch
+
+`git branch new_branch` - Branches to a new branch
+
+`git branch` - Show branches
+
+`git branch -d old_branch` - Delete a branch
+
 ## Git Pull
 
 `git pull origin master` - Pulls changes from the origin remote, master branch and merge them to the local checked-out branch
