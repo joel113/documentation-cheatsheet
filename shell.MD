@@ -281,6 +281,8 @@ Loops over the lines of a file.
 
 `awk '!a[$0]++` - Remove duplicates with awk command
 
+`tr 'a-z' 'A-Z'` - Replaces lower case with upper case letters
+
 `tr -d '[:space:]'` - Remove space characters, form feeds, new-lines, carriage returns, horizontal tabs, and vertical tabs
 
 `tr -d .` - Remove . character from the string
