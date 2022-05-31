@@ -434,6 +434,12 @@ Converts an excel file into csv file
 
 `uname -a` - Shows kernel release information
 
+## Samba Administration
+
+`smbpasswd -a username` - Readd a user to reset the password
+
+`smbpasswd -U username` - Change the password
+
 ## Shell Programming
 
 `if [[ $var ]]; then` - var is set and not empty
