@@ -223,6 +223,10 @@ Loops over the lines of a file.
 
 `curl -h "Accept-Encoding: gzip" -I https://www.google.com` - Retrieves a web page asking for a gzip compression
 
+## RSync
+
+`rsync -avu --delete "/home/user/A/" "/home/user/B"` - Syncs the files of A into B while preserving the file system attributes, verbosly, with a newer modification time and delete if a file does not exist in the source
+
 ## Web Sockets
 
 `wscat -c ws://websocket-echo.com` - Connects to host via web sockets
