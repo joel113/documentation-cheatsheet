@@ -50,6 +50,10 @@
 
 `docker inspect --format='{{.RepoDigests}}' gcr.io/alpha/homeapp:latest` - Shows the repository hash of an image
 
+`dive openjdk:17` - Inspects the layers of an image using the dive tool
+
+`syft openjdk:17` - Generates a software bill of materiales of container images using the syft tool
+
 ## Dockerfile
 
 ```
