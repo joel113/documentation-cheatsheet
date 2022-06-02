@@ -36,9 +36,19 @@
 
 `nerdctl run --help` - Prints the command line arguments of nerdctl run if you use nerdctl instead of the docker cli
 
+## Container
+
+`docker container prune` - Removes all stopped containers
+
 ## Images
 
+`docker images prune -a` - Removes all images
+
 `docker images --no-trunc --quiet datadog/agent:7-jmx` - Shows non truncated information about an image
+
+## System
+
+`docker system prune -a` - Removes all containers, networks, images and caches
 
 ## Pull
 
