@@ -228,3 +228,15 @@ implicit val somethingEncoder: Encoder[Something] = deriveEncoder[Something]
 	.mapJson(_.dropEmptyValues)
 	.mapJson(_.dropNullValues)
 ```
+
+https://circe.github.io/circe/
+
+https://github.com/circe/circe
+
+## Shapeless
+
+https://github.com/milessabin/shapeless
+
+https://github.com/typelevel/shapeless-3
+
+http://underscore.io/books/shapeless-guide/
