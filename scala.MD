@@ -208,6 +208,12 @@ val inverseFuture: Future[Matrix] = Future {
 https://docs.scala-lang.org/overviews/core/futures.html
 https://blog.colinbreck.com/calling-blocking-code-there-is-no-free-lunch/
 
+## Scalatest
+
+https://www.scalatest.org
+
+https://github.com/scalatest/scalatest
+
 ## Akka
 
 https://akka.io
