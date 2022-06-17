@@ -32,9 +32,11 @@ https://git-scm.com/docs
 
 ## Git Commit
 
-`git commit --amend` - Git commit ammend
+`git commit -a` - Commits all files including new, modified and deleted file
 
-`git commit --amend --no-edit -a` - Git commit ammend without editing the comment
+`git commit --amend` - Git commit amend
+
+`git commit --amend --no-edit -a` - Git commit amend without editing the comment
 
 ## Git Stage
 
@@ -43,6 +45,10 @@ https://git-scm.com/docs
 `git add -p` - Interactively stage files
 
 `git add -A` - Record all removals, additions and modifications
+
+`git add .` - Stages new and mofified without deleted
+
+`git add -u` - Stages modified and deleted without new
 
 `git rm build/*.js --ignore-unmatch` - Removes files from the index
 
