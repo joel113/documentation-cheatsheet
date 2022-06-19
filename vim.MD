@@ -44,6 +44,8 @@ L
 
 `dw` - Delete from the current position to the beginning of the next word
 
+`d0` - Delete from the current position to the beginning of the current line
+
 `d$` or `D` - Delete from the current position to the end of the current line
 
 `c$` or `C` - Delete from the current position to the end of the current line and enter insert mode
