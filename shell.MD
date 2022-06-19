@@ -104,6 +104,18 @@
 
 `echo foobar | cut 2- | rev | cut 2- | rev` - Removes the first and the last character of a string
 
+## Extracting
+
+`ls -l /usr/lib | cut -c1` - Lists the /usr/lib directory and extracts the first column
+
+`cut -f1 grades | sort | uniq -c` - Extracts the first column from grades, sorts and counts unique elements
+
+`cut -f3 file.txt | sort -nr | head -n1` - Extracts the third column, sorts reverse and shows the first element`
+
+`head -n5 /etc/passwd | cut -d: -f1` - Extracts the fifth column of /etc/passwd and extracts the first column using the : delimiter
+
+`md5sum *.jpg | cut -c1-32 | sort | uniq -c` - Takes a subpart of the md5sum, sorts and counts duplicates
+
 ## Variables
 
 `touch count-{123}.txt` - Generatres three files count-1.txt, count-2.txt and count-3.txt
