@@ -110,6 +110,20 @@ movieLength.foreach {
 
 ```
 
+## Options
+
+### Constructing an option using Option(...) vs. Some(...)
+
+If `Option(...)` instead of `Some(...)` is used, a null value evaluates to None instead of Some(null).
+
+```
+scala> val x: Option[String] = Some(null)
+x: Option[String] = Some(null)
+
+scala> val y: Option[String] = Option(null)
+y: Option[String] = None
+```
+
 ## Mapping and Transforming
 
 ### flatmap
