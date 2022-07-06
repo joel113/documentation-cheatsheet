@@ -360,6 +360,10 @@ in2csv input.xlsx > input.csv
 
 Converts an excel file into csv file
 
+## Image Processing
+
+`exiftool '-filename<CreateDate' -d %y%m%d_%H%M%S%%-c.%%le *` - Renames a list of pictures with respect to the exif date
+
 ## AWK
 
 `ps | awk '{print $1}'` - Print the first column of each line
