@@ -6,6 +6,8 @@
 
 `>` - Redirects the output of the result of a command
 
+`2>` - Redirects the stderr as output of a command
+
 `*` - Asterisk * or wildcard
 
 `~` - Home directory shortcut
@@ -61,6 +63,36 @@
 ## Commands
 
 `eval $command` - Runs a command stored in a variable (breakout possible!)
+
+`which cp` - Locates a command in the search path
+
+`type cp` - Locates a command in the search path including aliases, functions and shell builtins
+
+`echo $PATH | tr : "\n"` - Shows the directories of the search path
+
+## Redirecting
+
+`ls > output` - Redirects the stdout
+
+`cp nonexistent.txt file.txt 2> errors` - Redirects the stderr
+
+`cp nonexistent.txt file.txt 2>> errors` - Redirects the stderr and appends to erros
+
+`ls &> output` - Redirects both stdout and stderr
+
+## Qoutes
+
+`echo 'filename with spaces.txt'`
+
+`echo "filename with spaces.txt'`
+
+`echo filename\ with\ spaces.txt`
+
+`echo "with double quotes $VARIABLES are evaluted"`
+
+`echo 'with single quotes $VARIABLES are not evaluated"`
+
+`echo "with double quotes \$VARIABLES are not evaluated if the \$ is esacaped"`
 
 ## Here
 
