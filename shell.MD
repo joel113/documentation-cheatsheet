@@ -60,6 +60,44 @@
 
 `ls index.???` - Match any file with a three letter file ending
 
+## Navigtaion
+
+`pushd /var/www/html` - Changes directory and pushes the directory on the stack
+
+`dirs` - Shows the current directories on the stack
+
+`popd` - Changes directory and pops the directory from the stack
+
+## History
+
+`history` - Shows the history commands entered in the shell
+
+`history 3` - Shows the previous three command of the history
+
+`history | sort -nr | less` - Shows the latest to earliest entry in less
+
+`history | grep -w cd` - Shows the historical commands containing the word cd
+
+`history -c` - Clears the history
+
+`echo $HISTSIZE` - Shows the history size
+
+`echo $HISTFILE` - Shows the location of the shell history
+
+`HISTCONTROl=ignoredups` - Sets the variable which ignores duplicates in the history
+
+`!!` - Repeats the previous command even if it was only printed
+
+`!grep` - Repeats the most previous command starting with grep
+
+`!?grep?` - Repeats the most previous command containing grep
+
+`!-3` - Repeats the third previous command from the history
+
+`!-3:p` - Prints the third previous command from the history
+
+`!!:s/jg/jpg/ - Repeats the previous command but replaces jg with jpg
+
 ## Commands
 
 `eval $command` - Runs a command stored in a variable (breakout possible!)
