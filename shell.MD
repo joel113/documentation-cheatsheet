@@ -186,6 +186,16 @@
 
 `md5sum *.jpg | cut -c1-32 | sort | uniq -c` - Takes a subpart of the md5sum, sorts and counts duplicates
 
+## Brace Expansion
+
+`echo {1..10}` - Prints numbers from 1 to 10
+
+`echo {10..1}` - Prints the numbers from 10 to 1
+
+`ls file{2..4}` - Lists the files file2 file3 and file4
+
+`ls file[2-4]` - Matches existing filesnames as square brackets are pattern matching
+
 ## Variables
 
 `touch count-{123}.txt` - Generatres three files count-1.txt, count-2.txt and count-3.txt
@@ -205,6 +215,10 @@ var2=$(echo "$var1")
 ```
 
 ## Generating
+
+`yes` - Repeats print the character y until terminated
+
+`yes woof!` - Repeats printing woof! until terminated
 
 `openssl rand -base64 12` - Generates a base64 string with a length of 12
 
@@ -317,6 +331,16 @@ Loops over the lines of a file.
 
 `date +"%Y%m%d-%H%M%S"` - Return a formatted datetimestamp
 
+`date` - Prints the date in the default format
+
+`date +%Y-%m-%d` - Prints the date in the year-month-day format
+
+`date +%H:%M:%S` - Prints the date in the hours:minute:second format
+
+`date +"I cannot believe it's already %A!"` - Prints the day within a sentence
+
+
+
 ## Files
 
 `lsof -u joel` - Gets the open files of the user joel
@@ -384,6 +408,20 @@ Loops over the lines of a file.
 ## Calculating
 
 `echo "4+2" | bc` - Basic caluclator which adds 2 to 1
+
+## Text Processing
+
+`tac poem1.txt poem2.txt`- Reverses the lines of a file line by line
+
+`paste poem1.txt poem2.txt` - Combines the lines of files side by side line by line
+
+`diff file1 file2` - Compares two files line by line
+
+`tr` - Translates characters into other characters
+
+`rev` - Reverses characters on a line
+
+`awk` and `sed` - General purpose transformers
 
 ## Binary Data Processing
 
