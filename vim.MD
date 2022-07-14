@@ -110,6 +110,52 @@ L
 
 `:g/pattern/m$` - Move all lines matching a pattern to end of file
 
+## Change on multiple lines
+
+`:'<,```> normal .` - Execute the chosen command, select a new selection in the visual editor, use the given command to repeat
+
+## Replace in multiple files
+
+`:args *.py` - Creates a list of files on which the following commands will be executed
+
+`:argdo %s/From/To/g` - Performs a search and replace on the list of files
+
+`:argdo update` - Saves all files in the argument list
+
+## Bookmark lines in files
+
+`:marks` - Shows all bookmarks for any given file
+
+`:ma` - Creates a bookmark called 'a'
+
+````a` - Jump to the bookmark 'a'
+
+## Formatting
+
+`:%!jq .` - Formatting JSON Blocks
+
+## Sorting
+
+`:sort` - Sort alphabetically
+
+`:%sort!` - Sort in reverse
+
+`:%sort u` - Remove duplicates
+
+## Tab Management
+
+`gt` - Go to the next tab
+
+`gT` - Go to the previous tab
+
+`1gT` - Goes to the first tab as tabs are indexed from 1
+
+`:tabe` - Opens a new tab
+
+`:tabc` - Closes current tab
+
+`:tabo` - Close all but current tab
+
 ## Window Management
 
 `:split` - Horizontally split the editor
