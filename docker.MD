@@ -1,4 +1,4 @@
-# Docker Cheat Sheet
+# Container Cheat Sheet
 
 ## Run
 
@@ -148,3 +148,21 @@ CMD [ "/docker-gs-ping" ]
 `nerdctl rm -f $(nerdctl ps -a -q)` - Removes all containers
 
 `nerdctl volume rm -f $(nerdctl volume ls -q)` - Remove all volumes
+
+# Podman
+
+## Virtual Machine Management
+
+`podman machine init` - Initializes the virtual machine
+
+`podman machine start` - Starts the virtual machine
+
+`podman info` - Displays the machine host info
+
+`podman machine ssh` - Logs into the virtual machine
+
+## Run
+
+`podman run -d --rm registry.access.redhat.com/ubi9-micro sleep 1000` - Runs an image and executes the sleep command
+
+ 
