@@ -108,6 +108,20 @@
 
 `echo $PATH | tr : "\n"` - Shows the directories of the search path
 
+`alias` - Shows the available aliases
+
+`source .zshrc` - Rereads a configuration file
+
+`cd dir && touch new.txt` - Conditional list of commands where the second command is only executed if the first command was successful
+
+`cd dir || mkdir dir` - Conditional list of commands where the second command is only executed if the first command was not successful
+
+`sleep 300; echo "remember to walk the dog"` - Unconditional list where the second command is executed if the first command is done
+
+`mv $(grep -l "Artist: Kansas" *.txt) kansas` - Command substitution
+
+`diff <(ls *.jpg | sort -n) <(seq 1 1000 | sed 's/$/.jpg/'` - Process substitutuion where `<(` performs the commands in a new process
+
 ## Redirecting
 
 `ls > output` - Redirects the stdout
@@ -254,6 +268,12 @@ var2=$(echo "$var1")
 
 `cat somefile | tee -a log.txt | cat > /dev/null` - Log output but not show on the console
 
+## Variables
+
+`export E="I am an environment variable` - Sets an environment variable
+
+`L="I am just a local variable` - Sets a local variable
+
 ## Iterating
 
 ```
@@ -338,8 +358,6 @@ Loops over the lines of a file.
 `date +%H:%M:%S` - Prints the date in the hours:minute:second format
 
 `date +"I cannot believe it's already %A!"` - Prints the day within a sentence
-
-
 
 ## Files
 
