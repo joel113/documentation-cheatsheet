@@ -1,4 +1,10 @@
-# Container Cheat Sheet
+# Container Cheat Sheet (Docker and Containerd using Nerdctl)
+
+This section contains docker and nerdctl commands. At some point I did get rid of docker and docker desktop and did start exploring alternatives like nerdctl and containerd. I kept most of the docker commands and did not replace the `docker` with the `nerdctl` command as the commands are mostly compatible to each other. I am using nerdctl and containerd on macos. Therefore, I have to use lima which provides Linux virtual machines for macos. 
+
+## Virtual Machine Setup
+
+`limactl start` - Starts the default config of lima
 
 ## Run
 
@@ -15,6 +21,8 @@
 `docker run amazoncorreto:17 java --version` - Runs amazon correto and prints the java version
 
 `docker run -it -e FOO=BAR -t image_tag_name_and_version` - Runs an image and passes the environmental variable FOO with the value BAR
+
+`docker run -p 8070:8070 -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp --name nuclio-dashboard quay.io/nuclio/dashboard:stable-arm64` - Runs an image and shares the docker socket to the container that the container is able to connect to the docker deamon
 
 [Docker Run Reference](https://docs.docker.com/engine/reference/run/)
 
@@ -147,7 +155,9 @@ CMD [ "/docker-gs-ping" ]
 
 `nerdctl rm -f $(nerdctl ps -a -q)` - Removes all containers
 
-`nerdctl volume rm -f $(nerdctl volume ls -q)` - Remove all volumes
+`nerdctl volume rm -f $(nerdctl volume ls -q)` - Removes all images
+
+`nerdctl volume rm -f $(nerdctl volume ls -q)` - Removes all volumes
 
 # Podman
 
