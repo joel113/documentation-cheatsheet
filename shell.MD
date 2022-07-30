@@ -122,6 +122,12 @@
 
 `diff <(ls *.jpg | sort -n) <(seq 1 1000 | sed 's/$/.jpg/'` - Process substitutuion where `<(` performs the commands in a new process
 
+`bash -c "ls -l"` - Passes the given command to a new shell
+
+`echo "ls -l" | bash` - Pipes the given command to a new shell
+
+`echo "ls -" > outfile" | ssh -T myhost.example.com` - Passes a given command to a remote host using ssh
+
 ## Redirecting
 
 `ls > output` - Redirects the stdout
@@ -157,6 +163,8 @@
 ## Xargs
 
 `find . -name "*.tmp" -print0 | xargs -0 rm` - Passes the result of the first command to the second command using xargs
+
+`ls | xargs -I XYZ echo XYZ is my favorite food` - Passes the result of ls to xargs where XYZ is a placeholder for the passed argument
 
 ## Moving
 
