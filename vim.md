@@ -183,3 +183,9 @@ https://github.com/junegunn/vim-plug
 https://github.com/vim-airline/vim-airline
 
 https://github.com/vim-airline/vim-airline-themes
+
+https://github.com/JamshedVesuna/vim-markdown-preview
+
+https://github.com/joeyespo/grip
+
+https://daringfireball.net/projects/markdown/
