@@ -128,6 +128,8 @@ https://git-scm.com/docs
 
 `git show HEAD` - Shows the diff of the last commit
 
+`git diff HEAD^ -- k8s.MD` - Shows the diff to a staged commit for a specific file
+
 `git ls-tree --full-tree -r head` - Shows the files from the index
 
 ## Git Branch Manipulation
