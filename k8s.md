@@ -26,6 +26,8 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 `kubectl get crds` - Gets the state of the crd requests
 
+`kubectl get api-resources` - List the api resources managed by the cluster
+
 ## Cluster Access
 
 `kubectl port-forward svc/alertmanager-operated 9093:9093` - Forwards the given service port to localhost 9093
