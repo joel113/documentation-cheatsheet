@@ -20,7 +20,17 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 `kubectl get secret/keystore -o jsonpath='{.data}' -n tsmb | jq '."keystore.p12"' | tr -d \" | base64 -decode > keystore.p12`
 
-### Cert Manager
+## Custom Resource Defintions
+
+`kubectl apply -f https://raw.githubusercontent.com/prometheus-operator/prometheus-operator/master/bundle.yaml' - Applies the custom resource definition at the given url
+
+`kubectl get crds` - Gets the state of the crd requests
+
+## Cluster Access
+
+`kubectl port-forward svc/alertmanager-operated 9093:9093` - Forwards the given service port to localhost 9093
+
+## Cert Manager
 
 `kubectl get issuer` - Gets the issuer of the cert manager
 
