@@ -59,3 +59,7 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 `kubectl config use-context my-cluster-name` - Sets the current context to my-cluster-name
 
 `kubectl config unset current-context` - Resets the current context
+
+## Kustomize
+
+`kustomize build .` - Performs a kustomize build
