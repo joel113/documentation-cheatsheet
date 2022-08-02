@@ -56,6 +56,10 @@
 
 `sudo !!` - !! expands into the previous command
 
+`sudo !N` - !N expands into the nth previous command in the history list
+
+`ls !$` - !$ expands into the previous command's last parameter
+
 `ls index.*` - Matches any file with an arbitrary file ending
 
 `ls index.???` - Match any file with a three letter file ending
@@ -177,6 +181,14 @@
 `for f in *; do mv $f "$(echo $f | sed s/20211100/20211109/g)"; done` - Renames files using sed search and replace
 
 `for f in *.*; do mv -v "$f" "${f:11}"; done`- Removes first eleven characters from a filename
+
+Renames file ending of all files matching *.txt, where `*.txt` is a globbing pattern, `--` marks the end of the option list, `${f%.txt}` is a parameter expansion
+
+```
+for f in *.txt; do 
+    mv -- "$f" "${f%.txt}.text"
+done
+```
 
 ## Editing
 
@@ -367,6 +379,8 @@ Loops over the lines of a file.
 
 `date +"I cannot believe it's already %A!"` - Prints the day within a sentence
 
+`cal` - Shows a calendar in the terminal
+
 ## Files
 
 `lsof -u joel` - Gets the open files of the user joel
@@ -384,6 +398,10 @@ Loops over the lines of a file.
 `iftop` - Shows network traffic
 
 `lspci | egrep -i 'network|ethernet'` - List network interfaces
+
+`curl ip.sb` - Shows the current ip
+
+`curl ifconfig.me` - Shows the the current ip
 
 ## Administration
 
@@ -410,6 +428,10 @@ Loops over the lines of a file.
 `ps -ef` - Gets all processes
 
 `ps aux --sort=-%mem` - Gets all processes and sorts them by memory 
+
+`pgrep chrome` - Helps to quickly find the process id of the chrome application
+
+`sudo lsof -i :3000` - Returns the process id of the application hodling the 3000 port
 
 ## Text Processing
 
