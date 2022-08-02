@@ -12,6 +12,12 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 `kubectl cp alpine:message.avro ~/message.avro` - copies a file from a pod to the local directory
 
+## Deployments
+
+`kubectl get deployments`
+
+`kubectl scale deployment <deploymentname> --replicas=1`
+
 ## Logs
 
 `kubectl logs deployment/foobar -c app -n namespace --follow` - show logs of foobar deployment
