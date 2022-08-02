@@ -24,6 +24,8 @@ https://git-scm.com/docs
 
 `git branch -d old_branch` - Delete a branch
 
+`git branch --set-upstream-to=origin/<Branch> master` - Sets the upstream of the master branch
+
 ## Git Pull
 
 `git pull origin master` - Pulls changes from the origin remote, master branch and merge them to the local checked-out branch
