@@ -1,5 +1,9 @@
 # MacOs Cheat Sheet
 
+## Window Management
+
+`Cmd + Ctrl + f` - Opens the current application in full screen
+
 ## Java
 
 ```
