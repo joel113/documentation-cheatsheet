@@ -284,6 +284,10 @@ var2=$(echo "$var1")
 
 `bg` - Background and resume a job again
 
+`echo "command_to_be_run" | at 09:00` - Runs the given command at 9 am
+
+`at 09:00 -f /home/linux/script.sh` - Runs the given command at 9 am
+
 ## Piping
 
 `cat somefile | tee -a log.txt | cat > /dev/null` - Log output but not show on the console
