@@ -12,17 +12,23 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 `kubectl cp alpine:message.avro ~/message.avro` - copies a file from a pod to the local directory
 
+`kubectl get pods -n namespace -o=custom-columns=NAME:.metadata.name | grep "flink" | xargs -I POD kubectl delete pod POD -n namespace` - Deletes a range of pods depending on the name`
+
 ## Deployments
 
 `kubectl get deployments`
 
 `kubectl scale deployment <deploymentname> --replicas=1`
 
+## Config Maps
+
+`kubectl describe configmap/configmapname -n namespace` - Shows the config map configmapname
+
 ## Logs
 
-`kubectl logs pod/foobar container-name -n namespace --follow` - show logs of foobar pod and container-name container
+`kubectl logs pod/foobar container-name -n namespace --follow` - Show logs of foobar pod and container-name container
 
-`kubectl logs deployment/foobar -c app -n namespace --follow` - show logs of foobar deployment
+`kubectl logs deployment/foobar -c app -n namespace --follow` - Show logs of foobar deployment
 
 ## Secrets
 
