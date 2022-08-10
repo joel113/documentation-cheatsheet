@@ -8,7 +8,7 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 `kubectl run -i -tty alpine --image=alpine -n namespace -- sh`
 
-`apk --update add curl`
+`kubectl get pod -o="custom-columns=NAME:.metadata.name,INIT-CONTAINERS:.spec.initContainers[*].name,CONTAINERS:.spec.containers[*].name" -n namespace` - Shows a list of pods in the namespace including the containers
 
 `kubectl cp alpine:message.avro ~/message.avro` - copies a file from a pod to the local directory
 
@@ -19,6 +19,8 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 `kubectl scale deployment <deploymentname> --replicas=1`
 
 ## Logs
+
+`kubectl logs pod/foobar container-name -n namespace --follow` - show logs of foobar pod and container-name container
 
 `kubectl logs deployment/foobar -c app -n namespace --follow` - show logs of foobar deployment
 
