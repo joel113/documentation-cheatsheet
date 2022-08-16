@@ -16,13 +16,19 @@
 
 `Cmd + P` - show parameter information
 
+## Editor Navigation
+
+`Fn + Cmd + <-` - Go to the beginning of the file
+
+`Fn + Cmd + ->` - Go to the end of the file
+
 ## Layout
 
 `Shift + Cmd + Right or Left` - increase or decrease the width of the tool window
 
 `Shift + Cmd + Up or Down` - increase or decrease the height of the tool window
 
-## Navigation
+## Intellij Navigation
 
 `Esc` - Return to the editor window
 
