@@ -71,3 +71,5 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 ## Kustomize
 
 `kustomize build .` - Performs a kustomize build
+
+`kustomize build . | kubectl apply -f -` - Performs a kustomize build and passes the result to kubectl apply
