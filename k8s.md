@@ -24,6 +24,8 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 `kubectl describe configmap/configmapname -n namespace` - Shows the config map configmapname
 
+`kubectl edit configmap/configmapname -n namespace` - Edits the configmap
+
 ## Logs
 
 `kubectl logs pod/foobar container-name -n namespace --follow` - Show logs of foobar pod and container-name container
@@ -33,6 +35,10 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 ## Secrets
 
 `kubectl get secret/keystore -o jsonpath='{.data}' -n tsmb | jq '."keystore.p12"' | tr -d \" | base64 -decode > keystore.p12`
+
+## Nodes
+
+`kubectl get nodes` - Shows the nodes
 
 ## Custom Resource Defintions
 
