@@ -301,6 +301,14 @@ var2=$(echo "$var1")
 ## Iterating
 
 ```
+for dir in */; do
+	zip -r ${dir}.zip $dir
+done
+```
+
+Iterates through the directories in the current directory and zips the directories.
+
+```
 for COLOR in red white; do
 < wine-$COLOR.csv tr '[A-Z]; ' '[a-z],_' | tr -d \" > wine-${COLOR}-clean.csv
 done
