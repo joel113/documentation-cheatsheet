@@ -465,12 +465,6 @@ Loops over the lines of a file.
 
 `echo "${s%%.*}"` - Match some characters from the passed string
 
-## Calculating
-
-`echo "4+2" | bc` - Basic caluclator which adds 2 to 1
-
-## Text Processing
-
 `tac poem1.txt poem2.txt`- Reverses the lines of a file line by line
 
 `paste poem1.txt poem2.txt` - Combines the lines of files side by side line by line
@@ -482,6 +476,10 @@ Loops over the lines of a file.
 `rev` - Reverses characters on a line
 
 `awk` and `sed` - General purpose transformers
+
+## Calculating
+
+`echo "4+2" | bc` - Basic caluclator which adds 2 to 1
 
 ## Binary Data Processing
 
@@ -531,6 +529,10 @@ Converts an excel file into csv file
 ## Image Processing
 
 `exiftool '-filename<CreateDate' -d %y%m%d_%H%M%S%%-c.%%le *` - Renames a list of pictures with respect to the exif date
+
+`convert -resize x16 -gravity center -crop 16x16+0+0 avatar.png -flatten -colors 256 -background transparent favicon.ico` - Converts an image to a favicon
+
+`for file in 202208*_*.jpg; convert $file -resize 1000x750 resized/$file` - Converts files matching the pattern to a certain size
 
 ## AWK
 
