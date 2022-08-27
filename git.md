@@ -186,6 +186,12 @@ https://git-scm.com/docs/git-worktree
 
 `git rebase --continue`
 
+## Git Credential Helper
+
+`git config --global credential.helper store` - Sets the store credential helper which stores credentials for an unlimited time
+
+`git config --global credential.helper 'cache --timeout=<timeout>'` - Sets the cache credential helper which stores credentials for a defined amount of time
+
 ## Git Secrets
 
 Git Secrets command based on https://github.com/awslabs/git-secrets
