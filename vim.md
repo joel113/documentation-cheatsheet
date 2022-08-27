@@ -2,23 +2,31 @@
 
 ## Navigation
 
-Move the cursor
+`h` - Moves one character to the left
 
-```
-h
-j
-k
-l
-H
-M
-L
-```
+`j` - Moves one character to the bottom
 
-`w` - Jump forwards to the beginning of a word
+`k` - Moves one character to the top
 
-`e` - Jump forwards to the end of a word
+`l` - Moves one character to the right
 
-`b` - Jump backwards to the start of the a word
+`H` - Moves to the top of the page like (H)ome
+
+`M` - Moves to the middle of the page like (M)iddle
+
+`L` - Moves to the last line of the page like (L)ast
+
+`w` - Jump forwards to the beginning of a word like (w)ord
+
+`e` - Jump forwards to the end of a word like (e)nd
+
+`b` - Jump backwards to the start of the a word like (b)ack word
+
+`W` - Jump forwards to the beginning of a word like (W)ord but ignores symbols or punctations
+
+`E` - Jump forwards to the end of a word like (E)nd but ignores symbols or punctations
+
+`B` - Jump backwards to the start of the a word like (B)ack word but ignores symbols or punctations
 
 `0` - Jump to the start of the line
 
