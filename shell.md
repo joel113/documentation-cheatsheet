@@ -477,6 +477,8 @@ Loops over the lines of a file.
 
 `awk` and `sed` - General purpose transformers
 
+`pandoc -f markdown readme.md > readme.html` - Converts markdown into html
+
 ## Calculating
 
 `echo "4+2" | bc` - Basic caluclator which adds 2 to 1
