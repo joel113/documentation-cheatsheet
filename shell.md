@@ -433,6 +433,10 @@ Loops over the lines of a file.
 
 `sudo systemctl disable servicename` - Disables a service using systemd
 
+`sudo systemctl edit servicename` - Edits a systemd unit file with an overwrite
+
+`sudo journalctl -u servicename` - Shows the logs of a servvice
+
 `crontab -e` - Edits the cronjobs
 
 ## Processes
