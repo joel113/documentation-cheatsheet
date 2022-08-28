@@ -50,6 +50,8 @@
 
 [Polyfjord - Tutorial: Quick Smootgh Camera Movements in Blender](https://www.youtube.com/watch?v=a7qyW1G350g&ab_channel=Polyfjord)
 
+[Blender M1 GPU Support](https://www.youtube.com/watch?v=1HpjNuVcFm0&ab_channel=Littlerolz)
+
 ## References
 
 [Blender HotKeys](https://en.wikibooks.org/wiki/Blender_3D:_HotKeys/All)
