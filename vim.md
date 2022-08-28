@@ -170,11 +170,13 @@
 
 `:vsplit` - Vertically split the editor
 
-`Ctrl + W` - Switches to an other window
-
 `:close` - Closes the current window
 
 `:term` - Opens a terminal window
+
+`Ctrl + w` - Switches to an other window
+
+`Ctrl + z` - Pauses vim, resume with `fg`
 
 ## File Management
 
