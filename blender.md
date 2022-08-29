@@ -44,6 +44,8 @@
 
 [Smoothing key frames](https://blender.stackexchange.com/questions/228514/how-to-make-animation-curve-more-smooth)
 
+[Render Animations](https://docs.blender.org/manual/en/latest/render/output/animation.html)
+
 ## YouTube Tutorials
 
 [BlenderGuru - How to Make a Realisitc Earth in Blender in 20 mins](https://youtu.be/0YZzHn0iz8U)
