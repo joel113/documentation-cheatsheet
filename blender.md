@@ -6,6 +6,8 @@
 
 `Option + Z` - X-Ray
 
+`Tab` - Toggles between object and edit mode
+
 `z` - Toggles between draing the scene in wireframe and solid mode
 
 `Doubleclick` - Open the object context menu
@@ -29,6 +31,10 @@
 [Camera View Blender Manual](https://docs.blender.org/manual/en/latest/editors/3dview/navigate/camera_view.html)
 
 [Camera View Lock](https://docs.blender.org/manual/en/latest/editors/3dview/sidebar.html#dview-lock-camera-to-view)
+
+## Layout
+
+[Scenes & Objects](https://docs.blender.org/manual/en/latest/scene_layout/index.html)
 
 ## Rendering
 
