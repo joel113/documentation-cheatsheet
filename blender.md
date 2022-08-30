@@ -34,6 +34,14 @@
 
 ## Layout
 
+`G` - Move
+
+`G -> X` - Move x-axis only
+
+`G -> Y` - Move y-axis only
+
+`G -> Z` - Move z-axis only
+
 [Scenes & Objects](https://docs.blender.org/manual/en/latest/scene_layout/index.html)
 
 ## Rendering
