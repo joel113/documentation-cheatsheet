@@ -239,6 +239,52 @@ Go is a call by value language.
 
 However as maps and slices are implemented by pointers, they behave differently.
 
+## Pointers
+
+```
+var x int32 = 10
+var y bool = true
+pointerX := &x
+pointerY := &y
+var pointerZ *string
+```
+
+`&` - address operator
+
+`*` - indirection operator
+
+`new` - creates a new pointer
+
+Usually, the new keyword is not used, but the address operator:
+
+```
+x := &Foo{}
+
+var y string
+
+z := &y
+```
+
+### Mutability of values
+
+If a pointer is passed to a function, the function gets a copy of the value of the pointer.
+
+MIT’s course on Software Construction sums up the reasons why: “[I]mmutable types are safer from bugs, easier to understand, and more ready for change. Mutability makes it harder to understand what your program is doing, and much harder to enforce contracts.”
+
+As the Software Construction course materials go on to explain: “[U]sing mutable objects is just fine if you are using them entirely locally within a method, and with only one reference to the object.” Rather than declare that some variables and parameters are immutable, Go developers use pointers to indicate that a parameter is mutable.
+
+### References
+
+https://research.google/pubs/pub40801/
+
+https://www.forrestthewoods.com/blog/memory-bandwidth-napkin-math/
+
+https://segment.com/blog/allocation-efficiency-in-high-performance-go-services/
+
+https://www.ardanlabs.com/blog/2017/05/language-mechanics-on-stacks-and-pointers.html
+
+http://web.mit.edu/6.031/www/fa20/classes/08-immutability/
+
 ## Go Ko
 
 `ko build ./cmd/app` - Builds and pushes a container image
