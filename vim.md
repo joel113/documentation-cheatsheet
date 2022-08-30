@@ -150,6 +150,16 @@
 
 `:%sort u` - Remove duplicates
 
+## Buffer Manangement
+
+`:ls` - List of buffers
+
+`:e vim.md` - Opens the new file vim.md
+
+`:b blender.md` - Switches to the blender.md buffer
+
+`:b#` - Switches to the last visited file
+
 ## Tab Management
 
 `gt` - Go to the next tab
