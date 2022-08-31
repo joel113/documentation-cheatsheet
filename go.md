@@ -285,6 +285,60 @@ https://www.ardanlabs.com/blog/2017/05/language-mechanics-on-stacks-and-pointers
 
 http://web.mit.edu/6.031/www/fa20/classes/08-immutability/
 
+## Types, Methods, and Interfaces
+
+```
+type Person struct {
+    FirstName string
+    LastName string
+    Age int
+}
+```
+
+```
+type Score int
+type Converter func(string)Score
+type TeamScores map[string]Score
+```
+
+```
+type Counter struct {
+    total             int
+    lastUpdated time.Time
+}
+
+func (c *Counter) Increment() {
+    c.total++
+    c.lastUpdated = time.Now()
+}
+
+func (c Counter) String() string {
+    return fmt.Sprintf("total: %d, last updated: %v", c.total, c.lastUpdated)
+}
+```
+
+```
+type MailCategory int
+
+const (
+    Uncategorized MailCategory = iota
+    Personal
+    Spam
+    Social
+    Advertisements
+)
+```
+
+```
+var i interface{}
+i = 20
+i = "hello"
+i = struct {
+    FirstName string
+    LastName string
+} {"Fred", "Fredson"}
+```
+
 ## Go Ko
 
 `ko build ./cmd/app` - Builds and pushes a container image
