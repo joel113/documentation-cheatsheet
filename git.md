@@ -120,6 +120,8 @@ https://git-scm.com/docs
 
 `git reset --soft HEAD~1` - Reverts the last commit
 
+`git reset HEAD -- ../../dir` - Reverts certain files in a directory
+
 `git reset --hard head` - Reset branch to head
 
 `git reset --hard origin/master` - Reset branch to master from origin
