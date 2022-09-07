@@ -35,6 +35,45 @@
 
 [Flex Layout MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 
+### Align content to the center
+
+The flex layout can be used to align the content of an element to the center:
+
+```html
+<div class="container">
+  <div class="center">Center</div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+  justify-content: center;
+}
+```
+
+https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page
+
+## Bootstrap
+
+Bootstrap is a collection of stylesheets which can easily applied to a web development project.
+
+https://getbootstrap.com
+
+https://github.com/twbs/bootstrap
+
+### Button
+
+https://getbootstrap.com/docs/4.0/components/buttons/
+
+### Dropdowns
+
+https://getbootstrap.com/docs/4.0/components/dropdowns/
+
+### Navbar
+
+https://getbootstrap.com/docs/4.0/components/navbar/
+
 ## References
 
 [Mozilla Developer Network CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
