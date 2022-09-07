@@ -2,6 +2,10 @@
 
 ## Window Management
 
+`Ctrl + w` - Closes the front window of an application
+
+`Opt + Ctrl + w` - Closes all windows of an application 
+
 `Cmd + Ctrl + f` - Opens the current application in full screen
 
 ## Java
