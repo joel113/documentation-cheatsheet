@@ -27,3 +27,11 @@ result = employees.stream().anyMatch(e -> !e.isActive());
     -XX:+PrintGCDetails  \
     -Xlog:gc*=debug:file=/var/log/gc.log \
 ```
+
+## Maven
+
+### Maven Versions Plugin
+
+`mvn versions:display-dependency-updates` - Shows possible maven dependency updates 
+
+`mvn versions:update-properties` - Does possible maven dependency updates 
