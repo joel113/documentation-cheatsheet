@@ -50,6 +50,28 @@ https://api.flutter.dev/flutter/dart-core/DateTime-class.html
 
 https://pub.dev/documentation/intl/latest/intl/DateFormat-class.html
 
-## Format DateTime with DateFormat
+### Format DateTime with DateFormat
 
 https://stackoverflow.com/questions/54371874/how-get-the-name-of-the-days-of-the-week-in-dart
+
+## Futures
+
+https://dart.dev/codelabs/async-await
+
+https://dart.dev/guides/libraries/futures-error-handling
+
+## Reading and Writing Files
+
+https://docs.flutter.dev/cookbook/persistence/reading-writing-files
+
+### Directories
+
+https://api.dart.dev/stable/2.18.0/dart-io/Directory-class.html
+
+### Assets and Images
+
+https://docs.flutter.dev/development/ui/assets-and-images#sharing-assets-with-the-underlying-platform
+
+## Cocoapods
+
+https://stackoverflow.com/questions/64901180/how-to-run-cocoapods-on-apple-silicon-m1
