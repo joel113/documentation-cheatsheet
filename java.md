@@ -35,3 +35,11 @@ result = employees.stream().anyMatch(e -> !e.isActive());
 `mvn versions:display-dependency-updates` - Shows possible maven dependency updates 
 
 `mvn versions:update-properties` - Does possible maven dependency updates 
+
+https://github.com/mojohaus/versions-maven-plugin
+
+### Javen Jib Plugin
+
+`mvn compile jib:build`
+
+https://github.com/GoogleContainerTools/jib
