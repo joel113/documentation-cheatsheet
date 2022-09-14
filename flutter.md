@@ -1,5 +1,9 @@
 # Flutter
 
+## Lambda and Arrow Functions vs. Anonymous Functions
+
+https://stackoverflow.com/questions/59379354/how-to-call-multi-statements-when-flutter-is-started-with
+
 ## Widgets
 
 https://docs.flutter.dev/development/ui/widgets-intro
@@ -60,6 +64,10 @@ https://dart.dev/codelabs/async-await
 
 https://dart.dev/guides/libraries/futures-error-handling
 
+https://stackoverflow.com/questions/46579358/getting-values-from-future-instances
+
+https://stackoverflow.com/questions/59927528/how-to-refresh-listview-builder-flutter
+
 ## Reading and Writing Files
 
 https://docs.flutter.dev/cookbook/persistence/reading-writing-files
@@ -68,9 +76,15 @@ https://docs.flutter.dev/cookbook/persistence/reading-writing-files
 
 https://api.dart.dev/stable/2.18.0/dart-io/Directory-class.html
 
+https://stackoverflow.com/questions/14268967/how-do-i-list-the-contents-of-a-directory-with-dart
+
 ### Assets and Images
 
 https://docs.flutter.dev/development/ui/assets-and-images#sharing-assets-with-the-underlying-platform
+
+### JSON Serialization and Deserialization
+
+https://docs.flutter.dev/development/data-and-backend/json
 
 ## Cocoapods
 
