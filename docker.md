@@ -39,7 +39,13 @@ This section contains docker and nerdctl commands. At some point I did get rid o
 `docker run hello-world` - Runs the new image called hello world
 
 [Docker Build Reference](https://docs.docker.com/engine/reference/commandline/build/)
- 
+
+## Buildx
+
+`docker buildx bild -t hello-world .` - Builds and tags a new image from a Dockerfile
+
+[Docker Buildx Reference](https://docs.docker.com/build/buildx/)
+
 ## Help
 
 `nerdctl run --help` - Prints the command line arguments of nerdctl run if you use nerdctl instead of the docker cli
