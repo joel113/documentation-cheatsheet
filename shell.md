@@ -357,7 +357,7 @@ Loops over the lines of a file.
 
 `fc` - Fix or change a really long command that you run last with a text editor
 
-` ls -s` - Don't add a command to the history
+`ls -s` - Don't add a command to the history
 
 `ls $_` - Rerun a command (i.e. ls) with the last argument
 
@@ -417,7 +417,7 @@ Loops over the lines of a file.
 
 ## Administration
 
-`sudo shutdown -h 19:05 "Some message..." - Shutdown at a specific time
+`sudo shutdown -h 19:05 "Some message..."` - Shutdown at a specific time
 
 `sudo !!` - Reruns to the previous command with sudo prepended
 
