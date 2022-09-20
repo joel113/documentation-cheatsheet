@@ -26,7 +26,9 @@ https://git-scm.com/docs
 
 `git branch --set-upstream-to=origin/<Branch> master` - Sets the upstream of the master branch
 
-`git branch -vv`- Shows git branches including upstreams
+`git branch -vv` - Shows git branches including upstreams
+
+`git branch -avv` - Shows git branches including upstreams and remotes
 
 ## Git Pull
 
