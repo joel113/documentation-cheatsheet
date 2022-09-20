@@ -72,6 +72,8 @@
 
 `popd` - Changes directory and pops the directory from the stack
 
+`(cd /pathtosome/dirc; somecommand)` - Executes somecommand in a subshell in a specific directory
+
 ## History
 
 `history` - Shows the history commands entered in the shell
