@@ -2,6 +2,12 @@
 
 ## Window Management
 
+`Ctrl + Left or Right` - Moves to fullscreen window if there is one
+
+`Ctrl + Up` -  Shows the applications in an overview
+
+`Ctrl + Down` - Shows the instances of an application in an overview
+
 `Ctrl + w` - Closes the front window of an application
 
 `Opt + Ctrl + w` - Closes all windows of an application 
