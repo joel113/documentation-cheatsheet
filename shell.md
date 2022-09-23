@@ -441,6 +441,12 @@ Loops over the lines of a file.
 
 `crontab -e` - Edits the cronjobs
 
+## System Management
+
+`htop` - Shows the system resources as an alternative to top
+
+`btop` - Shows the system resources as an alternative to top
+
 ## Processes
 
 `ps -ef` - Gets all processes
