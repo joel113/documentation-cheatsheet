@@ -584,10 +584,6 @@ Converts an excel file into csv file
 
 `openssl x509 -in keyname.pem -text` - Prints the content of a certificate
 
-## Docker
-
-`docker run -it -rm alpine` - Runs an alpine image and logs into the shell
-
 ## SSH
 
 `ssh -f -N -D 127.0.0.1:8080 remoteserver` - Creates a socks proxy for application level fowarding

@@ -161,7 +161,7 @@ CMD [ "/docker-gs-ping" ]
 
 `nerdctl rm -f $(nerdctl ps -a -q)` - Removes all containers
 
-`nerdctl volume rm -f $(nerdctl volume ls -q)` - Removes all images
+`nerdctl rmi -f $(nerdctl images -a -q) -f` - Removes all images
 
 `nerdctl volume rm -f $(nerdctl volume ls -q)` - Removes all volumes
 

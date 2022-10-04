@@ -14,6 +14,10 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 `kubectl get pods -n namespace -o=custom-columns=NAME:.metadata.name | grep "flink" | xargs -I POD kubectl delete pod POD -n namespace` - Deletes a range of pods depending on the name`
 
+`kubectl get pods -o=custom-columns=NAME:.metadata.name | grep "grafana" | xargs -I POD kubectl logs pod/POD -c grafana --follow` - Shows the logs from a pod depending on the name for a specific container
+
+`kubectl get pods -o=custom-columns=NAME:.metadata.name | grep "grafana" | xargs -I POD kubectl exec -it POD -c grafana -- bash` - Execs the bash of a pod depending on the name for a specific container
+
 ## Deployments
 
 `kubectl get deployments`
@@ -25,6 +29,8 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 `kubectl describe configmap/configmapname -n namespace` - Shows the config map configmapname
 
 `kubectl edit configmap/configmapname -n namespace` - Edits the configmap
+
+`kubectl create configmap/configmapname -n namespace --from-file=ca-certirifcates.crt` - Adds a certificate from a file
 
 ## Logs
 
