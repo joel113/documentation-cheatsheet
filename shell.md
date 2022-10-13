@@ -584,6 +584,10 @@ Converts an excel file into csv file
 
 `openssl x509 -in keyname.pem -text` - Prints the content of a certificate
 
+`openssl s_client -connect office.com:443` - Prints the remote certificates
+
+`openssl s_client -connect office.com:443 -proxy localhost:8080` - Prints the remote certificates using a proxy
+
 ## SSH
 
 `ssh -f -N -D 127.0.0.1:8080 remoteserver` - Creates a socks proxy for application level fowarding
