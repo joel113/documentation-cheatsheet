@@ -130,6 +130,8 @@ https://git-scm.com/docs
 
 `git reset --hard origin/master` - Reset branch to master from origin
 
+`git reset --hard aBetterBranch` - Resets the current branch to the better branch
+
 ## Git Investigate
 
 `git show branch:file` - Shows the file within the branch
