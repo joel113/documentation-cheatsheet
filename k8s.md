@@ -14,15 +14,27 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 `kubectl get pods -n namespace -o=custom-columns=NAME:.metadata.name | grep "flink" | xargs -I POD kubectl delete pod POD -n namespace` - Deletes a range of pods depending on the name`
 
-`kubectl get pods -o=custom-columns=NAME:.metadata.name | grep "grafana" | xargs -I POD kubectl logs pod/POD -c grafana --follow` - Shows the logs from a pod depending on the name for a specific container
-
-`kubectl get pods -o=custom-columns=NAME:.metadata.name | grep "grafana" | xargs -I POD kubectl exec -it POD -c grafana -- bash` - Execs the bash of a pod depending on the name for a specific container
-
 ## Deployments
 
 `kubectl get deployments`
 
 `kubectl scale deployment <deploymentname> --replicas=1`
+
+## Logs
+
+`kubectl logs pod/foobar container-name -n namespace --follow` - Show logs of foobar pod and container-name container
+
+`kubectl logs deployment/foobar -c app -n namespace --follow` - Show logs of foobar deployment
+
+`kubectl get pods -o=custom-columns=NAME:.metadata.name | grep "grafana" | xargs -I POD kubectl logs pod/POD -c grafana --follow` - Shows the logs from a pod depending on the name for a specific container
+
+## Shell
+
+`kubectl exec --stdin --tty somepod -- /bin/bash` - Gets a shell to a running container
+
+`kubectl get pods -o=custom-columns=NAME:.metadata.name | grep "grafana" | xargs -I POD kubectl exec -it POD -c grafana -- bash` - Execs the bash of a pod depending on the name for a specific container
+
+https://kubernetes.io/docs/tasks/debug/debug-application/get-shell-running-container/
 
 ## Config Maps
 
@@ -32,15 +44,19 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 `kubectl create configmap/configmapname -n namespace --from-file=ca-certirifcates.crt` - Adds a certificate from a file
 
-## Logs
+`kubectl delete configmap/configmapname -n namespace` - Deletes a secret
 
-`kubectl logs pod/foobar container-name -n namespace --follow` - Show logs of foobar pod and container-name container
-
-`kubectl logs deployment/foobar -c app -n namespace --follow` - Show logs of foobar deployment
+https://kubernetes.io/docs/concepts/configuration/configmap/
 
 ## Secrets
 
 `kubectl get secret/keystore -o jsonpath='{.data}' -n tsmb | jq '."keystore.p12"' | tr -d \" | base64 -decode > keystore.p12`
+
+`kubectl create secret/somesecret -n namespace --from-literal="foo=bar" - Adds a secret from a literal
+
+`kubectl delete secret/somesecret -n namespace` - Deletes a secret
+
+https://kubernetes.io/docs/concepts/configuration/secret/
 
 ## Nodes
 
