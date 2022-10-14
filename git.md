@@ -108,8 +108,6 @@ https://git-scm.com/docs
 
 `git stash drop stash@{2}` - Drops a specific stash entry
 
-`git clean -fg` - Cleans untracked fils and directories
-
 ## Git Push
 
 `git push origin branchA:branchB` - Does a push from A local branch to B remote branch
@@ -131,6 +129,10 @@ https://git-scm.com/docs
 `git reset --hard origin/master` - Reset branch to master from origin
 
 `git reset --hard aBetterBranch` - Resets the current branch to the better branch
+
+## Git Clean
+
+`git clean -fg` - Cleans untracked fils and directories
 
 ## Git Investigate
 
