@@ -606,6 +606,8 @@ Converts an excel file into csv file
 
 `find /tmp -name 'foo.txt'` - Search for a file called foo.txt
 
+`fd  pattern` - Search for a file with the pattern
+
 ## Sorting
 
 `sort -u` - Sorts and removes duplicates
