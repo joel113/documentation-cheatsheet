@@ -58,6 +58,8 @@ https://git-scm.com/docs
 
 `git rm build/*.js --ignore-unmatch` - Removes files from the index
 
+`git restore --staged .` - Removes files from the staging
+
 ## Git Log
 
 `git log --all --decorate --oneline --graph` - Shows the history like a graph
