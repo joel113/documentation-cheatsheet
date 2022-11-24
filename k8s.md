@@ -52,7 +52,9 @@ https://kubernetes.io/docs/concepts/configuration/configmap/
 
 `kubectl get secret/keystore -o jsonpath='{.data}' -n tsmb | jq '."keystore.p12"' | tr -d \" | base64 -decode > keystore.p12`
 
-`kubectl create secret/somesecret -n namespace --from-literal="foo=bar" - Adds a secret from a literal
+`kubectl create secret/somesecret -n namespace --from-literal="foo=bar"` - Adds a secret from a literal
+
+`kubectl create -f secret.yaml` - Adds a secret from a yaml file
 
 `kubectl delete secret/somesecret -n namespace` - Deletes a secret
 
