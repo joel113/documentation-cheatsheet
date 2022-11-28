@@ -134,7 +134,9 @@ https://git-scm.com/docs
 
 ## Git Clean
 
-`git clean -fg` - Cleans untracked fils and directories
+`git clean -f` - Cleans untracked files
+
+`git clean -fd` - Cleans untracked fils and directories
 
 ## Git Investigate
 
