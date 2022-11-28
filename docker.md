@@ -24,6 +24,8 @@ This section contains docker and nerdctl commands. At some point I did get rid o
 
 `docker run -p 8070:8070 -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp --name nuclio-dashboard quay.io/nuclio/dashboard:stable-arm64` - Runs an image and shares the docker socket to the container that the container is able to connect to the docker deamon
 
+`docker run -t -i -v ${PWD}/dir:/tmp/dir alpine` - Runs an images and shares the directory dir with the container
+
 [Docker Run Reference](https://docs.docker.com/engine/reference/run/)
 
 ## Exec
