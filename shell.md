@@ -546,6 +546,8 @@ Converts an excel file into csv file
 
 `convert -resize x16 -gravity center -crop 16x16+0+0 avatar.png -flatten -colors 256 -background transparent favicon.ico` - Converts an image to a favicon
 
+`convert myfigure.png -resize 200x100 myfigure.jpg` - Resizes a picture
+
 `for file in 202208*_*.jpg; convert $file -resize 1000x750 resized/$file` - Converts files matching the pattern to a certain size
 
 ## AWK
@@ -569,10 +571,6 @@ Converts an excel file into csv file
 `cat /etc/shells | awk '{print substr($0,4)}'` - Use the substr function of AWK
 
 `df | awk 'NR==7, NR==11 {print NR, $0}'` | Print line 7 to 11 and print the line including the line number
-
-## Image Processing
-
-`exiftool -d '%Y%m%d-%H%M%S.jpg' '-filename<CreateDate' .` - Rename file names of pictures and use a formatted datetimestamp
 
 ## Video Processing
 
