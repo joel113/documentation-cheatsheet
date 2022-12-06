@@ -102,7 +102,13 @@
 
 `!-3:p` - Prints the third previous command from the history
 
-`!!:s/jg/jpg/ - Repeats the previous command but replaces jg with jpg
+`!!:s/jg/jpg/` - Repeats the previous command but replaces jg with jpg
+
+`$_` - Repeats the last argument of the previous command
+
+`!$` - Repeats the last argument of the previous command
+
+`!!:n` - Repeats the n-th argument of the previous command 
 
 ## Commands
 
