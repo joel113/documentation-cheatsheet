@@ -477,6 +477,8 @@ Loops over the lines of a file.
 
 `sed -r 's/[xyz]+/_/g'` - Remove some characters from the passed string
 
+`sed -i $'s/\r$//' filename` - Replaces dos with unix line endings
+
 `grep -oh "\w*th\w*" *` - Match some characters from the passed string
 
 `grep -rn /foobar/ -e text_to_find` - Find a text in a directory resursively
