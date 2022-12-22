@@ -88,6 +88,8 @@
 
 `history -c` - Clears the history
 
+`hh` - Provides an interactive search of the historical commands
+
 `echo $HISTSIZE` - Shows the history size
 
 `echo $HISTFILE` - Shows the location of the shell history
