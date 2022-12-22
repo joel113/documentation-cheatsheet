@@ -76,13 +76,15 @@
 
 ## History
 
-`history` - Shows the history commands entered in the shell
+`history` - Shows the historical commands entered in the shell
 
 `history 3` - Shows the previous three command of the history
 
 `history | sort -nr | less` - Shows the latest to earliest entry in less
 
 `history | grep -w cd` - Shows the historical commands containing the word cd
+
+`history | peco` - Shows the historical commands with an interactive search
 
 `history -c` - Clears the history
 
