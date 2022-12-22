@@ -646,6 +646,12 @@ Converts an excel file into csv file
 
 `uname -a` - Shows kernel release information
 
+## Mail Command
+
+`h` - Show list of mails
+
+`delete *` - Delete all mails
+
 ## Samba Administration
 
 `smbpasswd -a username` - Readd a user to reset the password
