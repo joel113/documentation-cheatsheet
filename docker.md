@@ -34,6 +34,10 @@ This section contains docker and nerdctl commands. At some point I did get rid o
 
 `docker exec -d ubuntu touch /tmp/whatever` - Runs a detached command in the ubuntu container
 
+## Container Management
+
+`docker logs container` - Fetch the logs of a container
+
 ## Build
 
 `docker build -t hello-world .` - Builds and tags a new image from a Dockerfile
