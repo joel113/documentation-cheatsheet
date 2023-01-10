@@ -200,6 +200,10 @@ https://git-scm.com/docs/git-worktree
 
 `git rebase --continue`
 
+## Git Archive
+
+`git archive --format=zip -o branch.zip branch`
+
 ## Git Credential Helper
 
 `git config --global credential.helper store` - Sets the store credential helper which stores credentials for an unlimited time
