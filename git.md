@@ -60,6 +60,8 @@ https://git-scm.com/docs
 
 `git rm build/*.js --ignore-unmatch` - Removes files from the index
 
+`git rm $(git ls-files -d)` - Removes all files which are listed as deleted
+
 `git restore --staged .` - Removes files from the staging
 
 ## Git Log
