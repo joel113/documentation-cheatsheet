@@ -667,3 +667,15 @@ Converts an excel file into csv file
 `if [[ $var ]]; then` - var is set and not empty
 
 `if [[ ! $var ]]; then` - var is not set or it is set to an empty string
+
+## Shell History
+
+Sets the number of commands in the history of the shell to 10000:
+
+```
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+```
+
+https://unix.stackexchange.com/questions/273861/unlimited-history-in-zsh
