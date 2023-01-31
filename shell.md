@@ -64,6 +64,20 @@
 
 `ls index.???` - Match any file with a three letter file ending
 
+## Combination
+
+`cmd1 && cmd2` - Executes the first and then the second command
+
+`cmd1 || cmd2` - Executes cmd1 and then cmd2 if cmd1 returns a non-zero exit code
+
+`cmd1 | cmd2` - Executes both commands sequentially by sending cmd1 output to cmd2
+
+`cmd1 |& cmd2` - Execues both commands sequentially by sending cmd1 output and error data to cmd2
+
+`cmd1 ; cmd2` - Executes both commands sequentially regardless of the exit codes
+
+`cmd1 & cmd2 &` - Executes both commands as background jobs
+
 ## Navigtaion
 
 `pushd /var/www/html` - Changes directory and pushes the directory on the stack
