@@ -8,6 +8,12 @@
 
 `npm set registry https://registry.npmjs.org/` - Sets npm to a different than the default registry
 
+## NPM Version Management with n
+
+`n` - Selects a node version
+
+https://github.com/tj/n
+
 ## Additional Notes
 
 ### package-lock.json
