@@ -7,3 +7,9 @@
 ## Pip Package Management
 
 `pip install jupyter` - Installs the jupyter package 
+
+## Jupyter
+
+`jupyter-lab` - Runs jupyter-lab
+
+`jupyter notebook` - Runs jupyter notebook
