@@ -10,6 +10,8 @@
 
 ## Jupyter
 
-`jupyter-lab` - Runs jupyter-lab
+`jupyter-lab` - Runs jupyter lab
 
 `jupyter notebook` - Runs jupyter notebook
+
+https://jupyter.org/install
