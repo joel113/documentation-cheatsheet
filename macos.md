@@ -14,6 +14,10 @@
 
 `Cmd + Ctrl + f` - Opens the current application in full screen
 
+## System Management
+
+`sudo powermetrics --samplers smc | grep -i "CPU die temperature"` - Print the CPU die temperature
+
 ## Java
 
 ```
