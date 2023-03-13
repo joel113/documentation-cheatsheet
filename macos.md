@@ -34,6 +34,10 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/<graalvm>/Contents/Home
 
 `echo $(brew --prefix)` - Shows the location where brew is installed
 
+`brew list` - Shows the installed packages
+
+`du -ch $(brew --prefix)` - Shows the space consumed by homebrew and the installed packages
+
 ## Finder Dialog
 
 `Shift + CMD + .` - Shows also hidden files toggle
