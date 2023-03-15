@@ -2,11 +2,15 @@
 
 `go init mod example/hello` - Initializes a go mmodule
 
-`go mod tidy` - Add missing an remove unused modules
+`go install` - Compile and install packages and dependencies
 
-`go run .` - Compiles and runs the go files in the directory
+`go get -u` - Adds dependencies to current module and installs them
+
+`go mod tidy` - Add missing an remove unused modules as part of the module maintenance
 
 `go build` - Builds a go application using go modules
+
+`go run .` - Compiles and runs the go files in the directory
 
 ## Strings
 
