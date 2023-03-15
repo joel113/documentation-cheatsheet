@@ -1,4 +1,4 @@
-# MacOs Cheat Sheet
+# MacOS Cheat Sheet
 
 ## Window Management
 
@@ -32,9 +32,13 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/<graalvm>/Contents/Home
 
 ## Brew
 
-`echo $(brew --prefix)` - Shows the location where brew is installed
-
 `brew list` - Shows the installed packages
+
+`brew pin ${package}` - Pins an installed package to the currently installed version
+
+`brew unpin ${package}` - Unpins an installed pin package to allow upgrades of the package
+
+`echo $(brew --prefix)` - Shows the location where brew is installed
 
 `du -ch $(brew --prefix)` - Shows the space consumed by homebrew and the installed packages
 
