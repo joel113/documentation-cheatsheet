@@ -34,6 +34,8 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/<graalvm>/Contents/Home
 
 `brew list` - Shows the installed packages
 
+`brew leaves` - Shows the installed leaves packages
+
 `brew pin ${package}` - Pins an installed package to the currently installed version
 
 `brew unpin ${package}` - Unpins an installed pin package to allow upgrades of the package
