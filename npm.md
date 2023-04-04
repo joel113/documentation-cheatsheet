@@ -2,6 +2,10 @@
 
 ## NPM Commands
 
+`npm install` - Installs all dependencies
+
+`npm ci` - Clean install of all dependencies (mainly used in cicd environments)
+
 `npm ls -a` - Prints all modules with dependencies in a tree structure
 
 ## NPM Mirror
