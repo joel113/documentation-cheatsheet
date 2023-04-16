@@ -11,3 +11,9 @@
 `sudo grpadd groupname` - Add a user
 
 `sudo grpdel groupname` - Remove a group
+
+## Package Management with Apt
+
+`apt list --installed` - Shows the installed packages
+
+`apt list --manual-installed` - Shows the manually installed packages
