@@ -22,6 +22,10 @@ https://github.com/folke/tokyonight.nvim
 
 https://alpha2phi.medium.com/neovim-for-beginners-status-line-dd0c97fba978
 
+https://github.com/nvim-lualine/lualine.nvim
+
+https://github.com/nvim-tree/nvim-web-devicons
+
 ## Modern Neovim
 
 https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#8c31
