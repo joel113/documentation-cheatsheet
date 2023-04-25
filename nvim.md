@@ -33,3 +33,15 @@ https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#8c31
 ### Modern Neovim - init.lua
 
 https://alpha2phi.medium.com/modern-neovim-init-lua-ab1220e3ecc1
+
+## Packer
+
+```
+nvim +PackerCompile
+
+nvim +PackerUpdate
+
+nvim +PackerInstall
+```
+
+https://github.com/wbthomason/packer.nvim
