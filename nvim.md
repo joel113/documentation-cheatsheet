@@ -26,6 +26,38 @@ https://github.com/nvim-lualine/lualine.nvim
 
 https://github.com/nvim-tree/nvim-web-devicons
 
+https://github.com/nvimdev/galaxyline.nvim
+
+### Neovim for Beginners - File Explorer
+
+#### Netrw commands
+
+`:h netrw`
+
+With `netrw` it is possible to browse local and remote files, e.g.:
+
+`nvim .`
+
+`nvim scp://somewhere/path/to/file`
+
+`:[N]Explore[!] [dir]` - Explore the directory of the current file.
+
+`:[N]Hexplore[!] [dir]` — Horizontal Split & Explore.
+
+`:[N]Lexplore[!] [dir]` — Left Explorer Toggle.
+
+`:[N]Sexplore[!] [dir]` — Split & Explore the current file’s directory.
+
+`:[N]Vexplore[!] [dir]` — Vertical Split & Explore.
+
+`:Texplore [dir]` — Tab & Explore.
+
+`:Rexplore` — Return to/from the Explorer.
+
+#### File Explroer
+
+https://github.com/nvim-tree/nvim-tree.lua
+
 ## Modern Neovim
 
 https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#8c31
@@ -45,3 +77,14 @@ nvim +PackerInstall
 ```
 
 https://github.com/wbthomason/packer.nvim
+
+An autocommand can automatically run `:PackerCompile` whenever `plugins.lua` is updated:
+
+```
+augroup packer_user_config
+  autocmd!
+  autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+augroup end
+```
+
+This autocommand can be placed in you `init.vim`.
