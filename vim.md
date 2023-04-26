@@ -122,6 +122,18 @@
 
 `:'<,```> normal .` - Execute the chosen command, select a new selection in the visual editor, use the given command to repeat
 
+`>>` - Indent line by shiftwidth spaces
+
+`<<` - Deindent line by shiftwidth spaces
+
+`5>>` - Indent 5 lines by shiftwidth spaces
+
+`5==` - Reindent 5 lines by shiftwidth spaces
+
+`.` - Repeats last command
+
+`Ctrl + v -> Shift + i -> insert -> Esc" - Select block in the visual mode, go to special insert mode, insert spaces, apply changes to all lines by pressing escape
+
 ## Replace in multiple files
 
 `:args *.py` - Creates a list of files on which the following commands will be executed
@@ -184,7 +196,13 @@
 
 `:term` - Opens a terminal window
 
-`Ctrl + w` - Switches to an other window
+`Ctrl + w -> h` - Horizontally split the editor
+
+`Ctrl + w -> v` - Vertically split the editor
+
+`Ctrl + w -> w` - Switches to an other window
+
+`Ctrl + w -> q` - Closes the active window
 
 `Ctrl + z` - Pauses vim, resume with `fg`
 
@@ -192,13 +210,19 @@
 
 `:edit foo.txt` - Starts editing another file foo.txt
 
+`:e foo.txt` - Starts edition another file foo.txt
+
 ## JSON
 
 :%!jq .
 
 ## Plugins
 
+### Plugin Management
+
 https://github.com/junegunn/vim-plug
+
+### Other Plugins
 
 https://github.com/vim-airline/vim-airline
 
