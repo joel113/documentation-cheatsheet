@@ -58,6 +58,12 @@ With `netrw` it is possible to browse local and remote files, e.g.:
 
 https://github.com/nvim-tree/nvim-tree.lua
 
+https://github.com/nvim-tree/nvim-tree.lua/issues/767
+
+https://alpha2phi.medium.com/neovim-for-beginners-file-explorer-a0b2e5cf6c57
+
+https://stackoverflow.com/questions/69345321/nvim-tree-lua-installed-through-vundle-but-its-commands-dont-exist
+
 ## Modern Neovim
 
 https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#8c31
