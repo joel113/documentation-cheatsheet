@@ -241,6 +241,34 @@ https://github.com/akka/akka
 https://blog.softwaremill.com/will-project-loom-obliterate-java-futures-fb1a28508232
 https://typelevel.org/blog/2021/02/21/fibers-fast-mkay.html
 
+## Files
+
+Scala provides the `scala.io.Source.fromFile` methods to read from files.
+
+```
+import scala.io.Source
+
+val filename = "fileopen.scala"
+for (line <- Source.fromFile(filename).getLines) {
+    println(line)
+}
+```
+
+Scala and the Java interoperability allows to use the access to the java.nio.file API.
+
+```
+import java.nio.file.{FileSystems, Files}
+import scala.collection.JavaConverters._
+
+val dir = FileSystems.getDefault.getPath("/tmp/baeldung")
+Files.list(dir).iterator().asScala.foreach(println)
+```
+
+### Files Links
+
+https://www.baeldung.com/scala/list-files
+https://alvinalexander.com/scala/how-to-open-read-text-files-in-scala-cookbook-examples/
+
 ## Circe
 
 Filter empty arrays, empty values and null values from a json file.
