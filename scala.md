@@ -294,3 +294,19 @@ https://github.com/milessabin/shapeless
 https://github.com/typelevel/shapeless-3
 
 http://underscore.io/books/shapeless-guide/
+
+## Mocking
+
+### Scala Mock
+
+https://github.com/paulbutcher/ScalaMock
+
+https://scalamock.org/
+
+### Mockito
+
+https://github.com/mockito
+
+https://github.com/mockito/mockito-scala
+
+https://site.mockito.org/
