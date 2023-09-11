@@ -517,6 +517,10 @@ Loops over the lines of a file.
 
 `pandoc -f markdown readme.md > readme.html` - Converts markdown into html
 
+`echo -n "$x"` - Adds a newline to the printed line
+
+`echo "$x\c" - Adds a newline to the printed line
+
 ## Calculating
 
 `echo "4+2" | bc` - Basic caluclator which adds 2 to 1
