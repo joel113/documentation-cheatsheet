@@ -268,6 +268,24 @@ done
 
 `mkdir dir && cd $_` - Creates a command while changing directory to it as $_ holds the argument passed to the previous command
 
+`echo !^` - Echos the first argument of the previous command
+
+`echo !$` - Echos the last argument of the previous command
+
+`echo !*` - Echos all arguments of the previous command
+
+`echo !:2` - Echos the second argument of the previous command
+
+`echo !:2-3` - Echos the second to third argument of the previous command
+
+`echo !:2-$` - Echos the second to last argument of the previous command
+
+`echo !:2*` - Echos the second to last argument of the previous command
+
+`echo !:0` - Echos the previous command
+
+`!!` - Repeats the previous line
+
 Performs a command substitution which considers a variable $var1.
 
 ```
@@ -378,6 +396,24 @@ $ while read line; do
 Loops over the lines of a file.
 
 `$ seq 0 2 100 | parallel "echo {}^2 | bc" | trim` - Iterates a sequence and passes the value to a parallel execution of bc
+
+Loops over a range of dates using brace expansion.
+
+```
+for i in 2015-01-{01..31} ...
+```
+
+Loops over a range of dates using GNU date:
+
+```
+d=2015-01-01
+while [ "$d" != 2015-02-20 ]; do 
+  echo $d
+  d=$(date -I -d "$d + 1 day")
+  # mac option for d decl (the +1d is equivalent to + 1 day)
+  # d=$(date -j -v +1d -f "%Y-%m-%d" $d +%Y-%m-%d)
+done
+```
 
 ## History
 
