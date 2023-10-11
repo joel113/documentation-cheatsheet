@@ -1,5 +1,9 @@
 # NeoVIM
 
+## User Interface
+
+`:setlocal nonumber norelativenumber` - Disables line numbers
+
 ## Neovim for Beginners
 
 https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#545a
