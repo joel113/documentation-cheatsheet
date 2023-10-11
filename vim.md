@@ -118,6 +118,8 @@
 
 `:g/pattern/m$` - Move all lines matching a pattern to end of file
 
+`:15,20s/^search/replace/c` - Replaces the term search with replace at the start of lines 15 to 20 with confirmation to replace
+
 ## Change on multiple lines
 
 `:'<,```> normal .` - Execute the chosen command, select a new selection in the visual editor, use the given command to repeat
