@@ -100,6 +100,8 @@
 
 `history | peco` - Shows the historical commands with an interactive search
 
+`history | cut -c 8-` - SHows the historical commands without line numbers
+
 `history -c` - Clears the history
 
 `hh` - Provides an interactive search of the historical commands
