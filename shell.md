@@ -160,6 +160,12 @@
 
 `echo "ls -" > outfile" | ssh -T myhost.example.com` - Passes a given command to a remote host using ssh
 
+`read -s -k '?Press any key to continue.'` - Waits in zsh for any key
+
+`read -s -k $'?Press any key to continue.\n'` - Waits in zsh for any key with new line
+
+`vared -p 'What would you like to do?: ' -c tmp` - Input a line of text in zsh
+
 ## Redirecting
 
 `ls > output` - Redirects the stdout
@@ -414,6 +420,15 @@ while [ "$d" != 2015-02-20 ]; do
   d=$(date -I -d "$d + 1 day")
   # mac option for d decl (the +1d is equivalent to + 1 day)
   # d=$(date -j -v +1d -f "%Y-%m-%d" $d +%Y-%m-%d)
+done
+```
+
+Loops over an array of directories:
+
+```
+array=(*/)
+for x in array; do
+  echo $x
 done
 ```
 
@@ -735,3 +750,13 @@ SAVEHIST=10000
 ```
 
 https://unix.stackexchange.com/questions/273861/unlimited-history-in-zsh
+
+# Links
+
+## The Bash Guide
+
+https://mywiki.wooledge.org/BashGuide
+
+https://guide.bash.academy/
+
+https://github.com/lhunath/bash.academy
