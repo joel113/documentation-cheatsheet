@@ -365,9 +365,16 @@ func main() {
     }
     fmt.Println(remainder, mod)
 }
-``
-
+```
 
 ## Go Ko
 
 `ko build ./cmd/app` - Builds and pushes a container image
+
+## Links
+
+https://go.dev/doc/code#Organization
+
+https://gobyexample.com/
+
+https://golang.org/doc/effective_go.html
