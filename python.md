@@ -1,5 +1,19 @@
 # Python Cheat Sheet
 
+## Python Testing
+
+`pytest` - Run all tests in the current directory
+
+`pytest -k test_name` - Run a specific test
+
+`pytest -v` - Verbose output
+
+`pytest testing/` - Run all tests in a specific directory
+
+`pytest test_module.py` - Run all tests in a specific file
+
+https://docs.pytest.org/en/7.1.x/how-to/usage.html
+
 ## Python Environments
 
 `pyenv install -l`
@@ -18,9 +32,21 @@
 
 `python -m venv /path/to/new/virtual/environment` - Setup a new virtual environment
 
+## Conda
+
+`conda env create -f conda-environment.yml` - Create a new conda environment from a file
+
+`conda env list` - List all conda environments
+
+`conda activate myenv` - Activate a conda environment
+
 ## Pip Package Management
 
 `pip install jupyter` - Installs the jupyter package 
+
+## PipX Package Management
+
+`pipx install jupyter` - Installs the jupyter package globally
 
 ## Jupyter
 
