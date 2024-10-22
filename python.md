@@ -36,9 +36,19 @@ https://docs.pytest.org/en/7.1.x/how-to/usage.html
 
 `conda env create -f conda-environment.yml` - Create a new conda environment from a file
 
+`conda info --envs` - List all conda environments
+
 `conda env list` - List all conda environments
 
+`conda activate` - Activates the base environment
+
 `conda activate myenv` - Activate a conda environment
+
+`conda install --name myenv matplotlib` - Installs matplotlib into the conda environment
+
+https://conda.io/projects/conda/en/latest/user-guide/getting-started.html
+
+https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html
 
 ## Pip Package Management
 
