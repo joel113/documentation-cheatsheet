@@ -76,6 +76,18 @@ https://git-scm.com/docs
 
 `git push origin tag_name` - Pushes the git tag to the origin remote
 
+## Git Revision Selection
+
+`git show main` - Shows the main branch
+
+`git rev-parse main` - Shows the hash of the main branch
+
+`git reflog` - Shows the reflog
+
+`git show HEAD@{5}` - Shows the fifth prio value of the HEAD of the repository
+
+`git show master@{yesterday}` - Shows where tha master branch was yesterday
+
 ## Git Stash
 
 `git stash` - Creates a stash
