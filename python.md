@@ -64,4 +64,16 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html
 
 `jupyter notebook` - Runs jupyter notebook
 
+`jupyter console --kernel myenv`- Runs console with a specific kernel
+
+`jupyter kernelspec list` - Sees available kernels
+
 https://jupyter.org/install
+
+https://docs.jupyter.org/en/stable/projects/kernels.html
+
+https://ipython.readthedocs.io/en/latest/install/kernel_install.html
+
+https://code.visualstudio.com/docs/datascience/jupyter-kernel-management
+
+https://github.com/microsoft/vscode-jupyter/wiki/Kernels-(Architecture)
