@@ -32,6 +32,14 @@ https://docs.pytest.org/en/7.1.x/how-to/usage.html
 
 `python -m venv /path/to/new/virtual/environment` - Setup a new virtual environment
 
+`python3 -m venv .venv` - Setup a new virtual environmnent in the .venv subfolder
+
+`source .venv/bin/activate` - Activates the virtual environment in the .venv subfolder
+
+`python -m pip install pandas` - Installs pandas in the virtual environment
+
+`python -m pip install --upgrade pip` - Upgrades pip in the virtual environment
+
 ## Conda
 
 `conda env create -f conda-environment.yml` - Create a new conda environment from a file
