@@ -52,11 +52,29 @@ https://docs.pytest.org/en/7.1.x/how-to/usage.html
 
 `conda activate myenv` - Activate a conda environment
 
+`conda list` - Lists packages in conda environment
+
 `conda install --name myenv matplotlib` - Installs matplotlib into the conda environment
 
 https://conda.io/projects/conda/en/latest/user-guide/getting-started.html
 
 https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html
+
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+## Poetry
+
+`poetry env use 3.12` - Uses python 3.12 in the current poetry environment
+
+`poetry config list` - Prints the current poetry configuration
+
+`poetry config virtualenvs.path` - Prints the current poetry configuration of the virtualenvs.path setting
+
+`poetry config virtualenvs.path /path/to/cache/directory/virtualenvs` - Updates the virtualenvs.path poetry configuration setting
+
+`poetry config virtualenvs.create false --local` - Uses a local poetry configuration which skips a dedicated virtual environment
+
+https://python-poetry.org/docs/configuration/
 
 ## Pip Package Management
 
