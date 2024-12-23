@@ -22,6 +22,8 @@ https://alpha2phi.medium.com/12-neovim-themes-with-tree-sitter-support-8be320b68
 
 https://github.com/folke/tokyonight.nvim
 
+https://neovim.io/doc/user/usr_30.html
+
 ### Neovim for Beginners - Status Line
 
 https://alpha2phi.medium.com/neovim-for-beginners-status-line-dd0c97fba978
