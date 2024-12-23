@@ -687,6 +687,8 @@ Converts an excel file into csv file
 
 `find /tmp -name 'foo.txt'` - Search for a file called foo.txt
 
+`find . -type f -exec rename -v 's/\'//g' {} \;` - Search for a character in all subdirectories and remove it
+
 `fd  pattern` - Search for a file with the pattern
 
 ## Sorting
