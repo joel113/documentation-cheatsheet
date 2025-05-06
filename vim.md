@@ -48,6 +48,10 @@
 
 `A` - Append at the of the line and enter the insert mode
 
+`Shift + i` - Enter the insert mode from the visual (block) mode
+
+`Esc` - Applies changes to the whole block if in the insert mode from the visual (block ) mode
+
 ## Delete
 
 `dw` - Delete from the current position to the beginning of the next word
