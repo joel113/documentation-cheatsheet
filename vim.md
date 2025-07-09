@@ -88,7 +88,34 @@
 
 `u` - Undo last change
 
+`:undo` - Undo lasth change from command line mode
+
 `Ctrl-r` - Redo last change
+
+`:redo` - Redo last change from command line mode
+
+`:earlier 12h` - Undoes changes of the last 12 hours from command line mode
+
+`:later 12h` - Redoes changes of the last 12 hours from command line mode
+
+`:undolist` - Shows the undo history
+
+`:undo N` - Undo to the Nth change in the undo history
+
+### Undo Settings
+
+It is possible to use following settings in the `.vimrc` file to change the undo settings:
+
+```vim
+set undofile          " Enable persistent undo
+set undodir=~/.vim/undodir " Set the directory for undo files
+set undolevels=1000   " Set the number of undo levels
+set undoreload=10000  " Set the number of lines to be kept in the undo history
+```
+
+### Undo Tree
+
+https://www.devzery.com/post/your-guide-to-mastering-undo-in-vim
 
 ## Search and Replace
 
@@ -98,9 +125,9 @@
 
 `:%s/foo/bar/g` - Find each occurance of foo and replace it with bar
 
-`:%s/foo/\r/g' - Replaces foo with a new line
+`:%s/foo/\r/g` - Replaces foo with a new line
 
-`:%s/\n\n/\r/g' - Replace two new lines with one new line
+`:%s/\n\n/\r/g` - Replace two new lines with one new line
 
 ## Search and Command
 
