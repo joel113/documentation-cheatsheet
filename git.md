@@ -68,6 +68,8 @@ https://git-scm.com/docs
 
 `git log --all --decorate --oneline --graph` - Shows the history like a graph
 
+`git log --all -grep="searchterm"` - Searches the commit messages for a search term
+
 ## Git Tag
 
 `git tag` - Shows the git tags of the current branch
