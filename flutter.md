@@ -102,6 +102,33 @@ The `setState()` opration notifies the flutter framework that the application st
 
 https://api.flutter.dev/flutter/widgets/State/setState.html
 
+### Restoration Mixin
+
+State resotration is a system that allows your app to save and restore its state when the user bakcgrounds and then resumes the app, or when the app is terminated and then restarted by the system.
+
+RestorationMixin is a crucial component of Flutter's state restoration strategy for stateful widgets. It provides the base functionality that allows you to:
+
+1. Register Restorable Properties: You use RestorationMixin to register properties that should be saved and restored during state restoration (e.g., text values from TextField widgets, currently selected tab, data values from business logic).
+
+2. Restore State: When the app is resumed, RestorationMixin restores the values of the registered properties automatically.
+
+3. Manage Restorable Values: The RestorationMixin has methods to properly dispose and manage values during the lifetime of the widget.
+
+4. Work with the Restoration System: RestorationMixin integrates with the framework's restoration system and provides the right calls at the right moment during state restoration.
+
+#### Key Concepts
+
+* RestorableProperty: A base class for restorable properties. You use concrete implementations of this to store state. The framework knows how to save the properties and restore them to a value. The available properties are
+    * RestorableBool
+    * RestorableDouble
+    * RestorableInt
+    * RestorableString
+    * RestorableTextEditingController
+    * RestorableValue<T>: Use this for complex objects, you need to implement the toPrimitives and the fromPrimitives method of the class you want to restore.
+* restoreState Function: A callback called during state restoration, to allow you to perform actions after the restorable values are loaded.
+* registerForRestoration Method: Method that registers a RestorableProperty. You must register properties in the initState of your widget.
+* Automatic Restoration IDs: The framework automatically assigns restoration IDs to widgets that use RestorationMixin. These IDs are used to uniquely identify each state.
+
 ### Reading and Writing Files
 
 https://docs.flutter.dev/cookbook/persistence/reading-writing-files
